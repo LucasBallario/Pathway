@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Phone from '@/public/phone.svg'
+import Information from './Information'
 
 export default function Header() {
   return (
@@ -29,6 +30,7 @@ export default function Header() {
           />
         </div>
       </div>
+      <Information />
     </div>
   )
 }
