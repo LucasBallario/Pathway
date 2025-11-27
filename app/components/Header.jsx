@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Phone from '@/public/phone.svg'
 import Information from './Information'
 import Instructions from './Instructions'
+import Privacy from './Privacy'
 
 export default function Header() {
   return (
@@ -34,6 +35,7 @@ export default function Header() {
       </div>
       <Information />
       <Instructions />
+      <Privacy />
     </div>
   )
 }
