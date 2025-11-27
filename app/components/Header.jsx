@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Phone from '@/public/phone.svg'
 import Information from './Information'
+import Instructions from './Instructions'
 
 export default function Header() {
   return (
@@ -16,7 +17,8 @@ export default function Header() {
             Find your digital footprint before others do
           </h2>
           <p className="text-lg lg:text-xl text-slate-300 mt-4 leading-relaxed">
-            We analyze your online presence to help you protect your privacy and reduce digital risks
+            We analyze your online presence to help you <br />
+             protect your privacy and reduce digital risks
           </p>
         </div>
 
@@ -31,6 +33,7 @@ export default function Header() {
         </div>
       </div>
       <Information />
+      <Instructions />
     </div>
   )
 }
