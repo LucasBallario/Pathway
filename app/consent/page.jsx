@@ -53,7 +53,7 @@ export default function ConsentPage() {
             <Checkbox
               id="consent"
               checked={isConsented}
-              onCheckedChange={() => setIsConsented()}
+              onCheckedChange={(checked) => setIsConsented(checked)}
               className="mt-1"
             />
             <label htmlFor="consent" className="text-sm text-foreground leading-relaxed cursor-pointer">

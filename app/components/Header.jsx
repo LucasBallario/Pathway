@@ -26,7 +26,7 @@ export default function Header() {
             We analyze your online presence to help you <br />
             protect your privacy and reduce digital risks
           </p>
-          <button onClick={() => Router.push('/Consent')} className='px-12 py-4 rounded-xl bg-slate-500 hover:bg-slate-600 transition-colors font-bold mt-6 cursor-pointer'>
+          <button onClick={() => Router.push('/consent')} className='px-12 py-4 rounded-xl bg-slate-500 hover:bg-slate-600 transition-colors font-bold mt-6 cursor-pointer'>
             Start
           </button>
         </div>
