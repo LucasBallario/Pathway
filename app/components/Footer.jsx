@@ -24,22 +24,22 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Product</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                 Characteristics
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                     Security
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                   Roadmap
                 </Link>
               </li>
@@ -50,17 +50,17 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Company</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                   Contact
                 </Link>
               </li>
@@ -72,22 +72,22 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                   Privacity
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                   Terms
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                   Cookies
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
                   Support
                 </Link>
               </li>
