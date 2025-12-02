@@ -3,15 +3,17 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
+import { useRouter } from "next/navigation"
 
 
 export default function ConsentPage() {
+  const Router = useRouter()
   const [isConsented, setIsConsented] = useState(false)
 
   const handleContinue = () => {
     if (isConsented) {
       console.log("Consent accepted")
-    // redirigir
+      Router.push('/form')
     }
   }
 
@@ -61,7 +63,7 @@ export default function ConsentPage() {
             </label>
           </div>
 
-          <Button onClick={handleContinue} disabled={!isConsented} size="lg" className="w-full">
+          <Button onClick={() => handleContinue} disabled={!isConsented} size="lg" className="w-full">
             Continue
           </Button>
 
