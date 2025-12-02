@@ -1,27 +1,89 @@
 import React from 'react'
 
-export default function page() {
+export default function Page() {
   return (
-    <div className='p-10 bg-white border-slate-500 rounded-xl w-[40%] justify-center items-center m-auto'>
-        <div className=''>
-            <p className='text-2xl font-semibold text-center'>Personal information</p>
-
-              <form className='flex flex-col gap-3'>
-                <label>Full Name/Alias</label>
-                <input className='px-5 border-1 border-slate-500 rounded-lg' type='text' />
-
-                <label>Gmail</label>
-                <input className='px-5 border-1 border-slate-500 rounded-lg' type='text' />
-
-                <label>Additional keywords</label>
-                <input className='px-5 border-1 border-slate-500 rounded-lg' type='text' />
-
-                <label>Region</label>
-                <input type='radio' />
-              </form>
+    <div className='min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-6'>
+      <div className='w-full max-w-md bg-white shadow-xl rounded-2xl p-8 border border-slate-200'>
+        <div className='mb-8'>
+          <h1 className='text-3xl font-bold text-slate-800 text-center mb-2'>Search Information</h1>
+          <p className='text-slate-500 text-center text-sm'>Complete the form to begin your search</p>
         </div>
 
+        <form className='space-y-6'>
+          <div className='space-y-2'>
+            <label className='block text-sm font-medium text-slate-700'>
+              Full Name/Alias
+            </label>
+            <input 
+              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all' 
+              type='text'
+              placeholder='Enter name or alias'
+            />
+          </div>
 
+          <div className='space-y-2'>
+            <label className='block text-sm font-medium text-slate-700'>
+              Gmail
+            </label>
+            <input 
+              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all' 
+              type='email'
+              placeholder='example@gmail.com'
+            />
+          </div>
+
+          <div className='space-y-2'>
+            <label className='block text-sm font-medium text-slate-700'>
+              Additional Keywords
+            </label>
+            <input 
+              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all' 
+              type='text'
+              placeholder='Enter keywords separated by commas'
+            />
+          </div>
+
+          <div className='space-y-2'>
+            <label className='block text-sm font-medium text-slate-700'>
+              Country
+            </label>
+            <select 
+              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white cursor-pointer'
+            >
+              <option value=''>Select a country</option>
+              <option value='AR'>Argentina</option>
+              <option value='US'>United States</option>
+              <option value='MX'>Mexico</option>
+              <option value='ES'>Spain</option>
+              <option value='CO'>Colombia</option>
+              <option value='CL'>Chile</option>
+              <option value='PE'>Peru</option>
+              <option value='VE'>Venezuela</option>
+              <option value='EC'>Ecuador</option>
+              <option value='BR'>Brazil</option>
+              <option value='UY'>Uruguay</option>
+              <option value='PY'>Paraguay</option>
+              <option value='BO'>Bolivia</option>
+              <option value='CR'>Costa Rica</option>
+              <option value='PA'>Panama</option>
+              <option value='GT'>Guatemala</option>
+              <option value='HN'>Honduras</option>
+              <option value='SV'>El Salvador</option>
+              <option value='NI'>Nicaragua</option>
+              <option value='DO'>Dominican Republic</option>
+              <option value='CU'>Cuba</option>
+              <option value='PR'>Puerto Rico</option>
+            </select>
+          </div>
+
+          <button 
+            type='submit'
+            className='w-full bg-slate-600 hover:bg-black cursor-pointer text-white font-semibold py-3 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg'
+          >
+            Search
+          </button>
+        </form>
+      </div>
     </div>
   )
 }
