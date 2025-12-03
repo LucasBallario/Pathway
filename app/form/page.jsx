@@ -1,6 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Page() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    keyWords: "",
+    region: ""
+  })
+  const handleChange = (e) => {
+    const {name, value} = e.target
+    setFormData((prev) => ({
+      ...prev,
+      [name] : value }))
+
+    
+  }
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault()
+
+  }
+
   return (
     <div className='min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-6'>
       <div className='w-full max-w-md bg-white shadow-xl rounded-2xl p-8 border border-slate-200'>
@@ -9,13 +29,13 @@ export default function Page() {
           <p className='text-slate-500 text-center text-sm'>Complete the form to begin your search</p>
         </div>
 
-        <form className='space-y-6'>
+        <form onSubmit={handleFormSubmit} className='space-y-6'>
           <div className='space-y-2'>
             <label className='block text-sm font-medium text-slate-700'>
               Full Name/Alias
             </label>
-            <input 
-              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all' 
+            <input onChange={handleChange} value={formData.fullName} name='fullName'
+              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-600 focus:border-transparent outline-none transition-all' 
               type='text'
               placeholder='Enter name or alias'
             />
@@ -25,8 +45,8 @@ export default function Page() {
             <label className='block text-sm font-medium text-slate-700'>
               Gmail
             </label>
-            <input 
-              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all' 
+            <input onChange={handleChange} value={formData.email} name='email'
+              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-600 focus:border-transparent outline-none transition-all' 
               type='email'
               placeholder='example@gmail.com'
             />
@@ -36,8 +56,8 @@ export default function Page() {
             <label className='block text-sm font-medium text-slate-700'>
               Additional Keywords
             </label>
-            <input 
-              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all' 
+            <input onChange={handleChange} value={formData.keyWords} name='keyWords'
+              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-600 focus:border-transparent outline-none transition-all' 
               type='text'
               placeholder='Enter keywords separated by commas'
             />
@@ -47,8 +67,8 @@ export default function Page() {
             <label className='block text-sm font-medium text-slate-700'>
               Country
             </label>
-            <select 
-              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white cursor-pointer'
+            <select onChange={handleChange} value={formData.region} name='region'
+              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-600 focus:border-transparent outline-none transition-all bg-white cursor-pointer'
             >
               <option value=''>Select a country</option>
               <option value='AR'>Argentina</option>
@@ -76,7 +96,7 @@ export default function Page() {
             </select>
           </div>
 
-          <button 
+          <button
             type='submit'
             className='w-full bg-slate-600 hover:bg-black cursor-pointer text-white font-semibold py-3 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg'
           >
