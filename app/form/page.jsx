@@ -1,3 +1,4 @@
+import { error } from 'console'
 import React, { useState } from 'react'
 
 export default function Page() {
@@ -18,6 +19,23 @@ export default function Page() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault()
+    const data = new FormData()
+    data.append("fullName", formData.fullName)
+    data.append("email", formData.email)
+    data.append("keyWords", formData.keyWords)
+    data.append("region", formData.region)
+
+    fetch("/api/search", { method: "POST", body: data })
+      .then(async response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`)
+        } 
+        const result = await response.json()
+      })
+      .catch(error => {
+        console.error('Error fetching JSON:', error);
+
+      })
 
   }
 
