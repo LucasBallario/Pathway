@@ -47,4 +47,38 @@ export async function POST(request) {
       { status: 500 }
     )
   }
+
+
+
+  // Search
+
+  const searchGoogle = () => {
+      return []
+  }
+
+  const searchSocialMedia = () => {
+    return []
+  }
+
+  const searchLeaks = () => {
+    return []
+  }
+
+  const searchUserNames = () => {
+    return []
+  }
+
+  const searchPublicRecords = () => {
+    return []
+  }
+
+  const runFullScan = () => {
+      searchGoogle()
+      searchSocialMedia()
+      searchLeaks()
+      searchUserNames()
+      searchPublicRecords()
+  }
+
+
 }
