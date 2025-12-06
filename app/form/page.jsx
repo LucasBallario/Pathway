@@ -25,12 +25,14 @@ export default function Page() {
     data.append("keyWords", formData.keyWords)
     data.append("region", formData.region)
 
-    fetch("/api/search", { method: "POST", body: data })
+    fetch("/api/scan", { method: "POST", body: data })
       .then(async response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
         } 
         const result = await response.json()
+        console.log("SCAN RESULT:", result) 
+
       })
       .catch(error => {
         console.error('Error fetching JSON:', error);

@@ -10,11 +10,17 @@ export async function POST(request) {
     const keywords = formData.get("keyWords")
     const region = formData.get("region")
 
+    const clean = (str) => str?.trim().toLowerCase() || "";
+
+
     const results = runFullScan({
         name,
         email,
         keywords,
         region
     })
-    return  Response.json({results})
+    return  Response.json({
+        message: "Scan complete",
+        results
+    })
 }
