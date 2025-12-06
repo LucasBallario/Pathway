@@ -1,4 +1,6 @@
 'use server'
+export {searchGoogle,searchSocialMedia,searchLeaks,searchUserNames,searchPublicRecords,runFullScan}
+
 
 export async function POST(request) {
   try {
@@ -50,45 +52,7 @@ export async function POST(request) {
 
 
 
-  // Search
+  
 
-  const searchGoogle = () => {
-      return []
-  }
-
-  const searchSocialMedia = () => {
-    return []
-  }
-
-  const searchLeaks = () => {
-    return []
-  }
-
-  const searchUserNames = () => {
-    return []
-  }
-
-  const searchPublicRecords = () => {
-    return []
-  }
-
-  const runFullScan = (formData) => {
-      const googleResults = searchGoogle(formData)
-      const socialMediaResults = searchSocialMedia(formData)
-      const leaksResults = searchLeaks(formData)
-      const userNamesResults = searchUserNames( formData)
-      const publicRecordsResults = searchPublicRecords(formData)
-
-      return {
-          google: googleResults,
-          socialMedia: socialMediaResults,
-          leaks: leaksResults,
-          usernames: userNamesResults,
-          publicRecords: publicRecordsResults
-        }
-      
-        
-      
-  }
 
 }
