@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { createContext } from "vm";
+import { createContext } from "react";
 
 const ScanContext = createContext()
 
@@ -11,7 +11,7 @@ const ScanProvider = ({children}) => {
 }
 
 const useScan = () => {
-    useContext(ScanContext)
+   return useContext(ScanContext)
 }
 
 export { ScanProvider, useScan }

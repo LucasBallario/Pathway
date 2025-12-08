@@ -1,7 +1,10 @@
-import { error } from 'console'
 import React, { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import {useScan} from '../context/ScanContext'
 
 export default function Page() {
+  const router = useRouter()
+  const { setScanResults } = useScan()
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -31,6 +34,8 @@ export default function Page() {
           throw new Error(`HTTP error! status: ${response.status}`)
         } 
         const result = await response.json()
+        setScanResults(result.results)
+        router.push("/scan/results")
         console.log("SCAN RESULT:", result) 
 
       })

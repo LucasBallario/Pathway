@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Lato } from 'next/font/google';
+import {ScanProvider} from './context/ScanContext'
 
 const lato = Lato({
   subsets: ['latin'], 
@@ -19,11 +20,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={lato.className}>
+    
+      <html lang="en" className={lato.className}>
       <body className="bg-black"
       >
+       <ScanProvider >
         {children}
+      </ScanProvider>
       </body>
     </html>
+   
   );
 }
