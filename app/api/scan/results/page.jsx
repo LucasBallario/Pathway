@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function page() {
+export default function Results() {
   return (
-    <div>page</div>
+    <div>
+      <h1>Digital footprint report</h1>
+    </div>
   )
 }
