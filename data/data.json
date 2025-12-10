@@ -1,0 +1,1894 @@
+[
+    {
+      "name": "1337x",
+      "pattern": "https://www.1337x.to/user/{username}/"
+    },
+    {
+      "name": "2Dimensions",
+      "pattern": "https://2Dimensions.com/a/{username}"
+    },
+    {
+      "name": "7Cups",
+      "pattern": "https://www.7cups.com/@{username}"
+    },
+    {
+      "name": "9GAG",
+      "pattern": "https://www.9gag.com/u/{username}"
+    },
+    {
+      "name": "APClips",
+      "pattern": "https://apclips.com/{username}"
+    },
+    {
+      "name": "About.me",
+      "pattern": "https://about.me/{username}"
+    },
+    {
+      "name": "Academia.edu",
+      "pattern": "https://independent.academia.edu/{username}"
+    },
+    {
+      "name": "AdmireMe.Vip",
+      "pattern": "https://admireme.vip/{username}"
+    },
+    {
+      "name": "Airbit",
+      "pattern": "https://airbit.com/{username}"
+    },
+    {
+      "name": "Airliners",
+      "pattern": "https://www.airliners.net/user/{username}/profile/photos"
+    },
+    {
+      "name": "All Things Worn",
+      "pattern": "https://www.allthingsworn.com/profile/{username}"
+    },
+    {
+      "name": "AllMyLinks",
+      "pattern": "https://allmylinks.com/{username}"
+    },
+    {
+      "name": "AniWorld",
+      "pattern": "https://aniworld.to/user/profil/{username}"
+    },
+    {
+      "name": "Anilist",
+      "pattern": "https://anilist.co/user/{username}/"
+    },
+    {
+      "name": "Apple Developer",
+      "pattern": "https://developer.apple.com/forums/profile/{username}"
+    },
+    {
+      "name": "Apple Discussions",
+      "pattern": "https://discussions.apple.com/profile/{username}"
+    },
+    {
+      "name": "Aparat",
+      "pattern": "https://www.aparat.com/{username}/"
+    },
+    {
+      "name": "Archive of Our Own",
+      "pattern": "https://archiveofourown.org/users/{username}"
+    },
+    {
+      "name": "Archive.org",
+      "pattern": "https://archive.org/details/@{username}"
+    },
+    {
+      "name": "Arduino Forum",
+      "pattern": "https://forum.arduino.cc/u/{username}/summary"
+    },
+    {
+      "name": "ArtStation",
+      "pattern": "https://www.artstation.com/{username}"
+    },
+    {
+      "name": "Asciinema",
+      "pattern": "https://asciinema.org/~{username}"
+    },
+    {
+      "name": "Ask Fedora",
+      "pattern": "https://ask.fedoraproject.org/u/{username}"
+    },
+    {
+      "name": "Atcoder",
+      "pattern": "https://atcoder.jp/users/{username}"
+    },
+    {
+      "name": "Vjudge",
+      "pattern": "https://VJudge.net/user/{username}"
+    },
+    {
+      "name": "Audiojungle",
+      "pattern": "https://audiojungle.net/user/{username}"
+    },
+    {
+      "name": "Autofrage",
+      "pattern": "https://www.autofrage.net/nutzer/{username}"
+    },
+    {
+      "name": "Avizo",
+      "pattern": "https://www.avizo.cz/{username}/"
+    },
+    {
+      "name": "AWS Skills Profile",
+      "pattern": "https://skillsprofile.skillbuilder.aws/user/{username}/"
+    },
+    {
+      "name": "BOOTH",
+      "pattern": "https://{username}.booth.pm/"
+    },
+    {
+      "name": "Bandcamp",
+      "pattern": "https://www.bandcamp.com/{username}"
+    },
+    {
+      "name": "Bazar.cz",
+      "pattern": "https://www.bazar.cz/{username}/"
+    },
+    {
+      "name": "Behance",
+      "pattern": "https://www.behance.net/{username}"
+    },
+    {
+      "name": "Bezuzyteczna",
+      "pattern": "https://bezuzyteczna.pl/uzytkownicy/{username}"
+    },
+    {
+      "name": "BiggerPockets",
+      "pattern": "https://www.biggerpockets.com/users/{username}"
+    },
+    {
+      "name": "BioHacking",
+      "pattern": "https://forum.dangerousthings.com/u/{username}"
+    },
+    {
+      "name": "BitBucket",
+      "pattern": "https://bitbucket.org/{username}/"
+    },
+    {
+      "name": "Bitwarden Forum",
+      "pattern": "https://community.bitwarden.com/u/{username}/summary"
+    },
+    {
+      "name": "Blipfoto",
+      "pattern": "https://www.blipfoto.com/{username}"
+    },
+    {
+      "name": "Blitz Tactics",
+      "pattern": "https://blitztactics.com/{username}"
+    },
+    {
+      "name": "Blogger",
+      "pattern": "https://{username}.blogspot.com"
+    },
+    {
+      "name": "Bluesky",
+      "pattern": "https://bsky.app/profile/{username}.bsky.social"
+    },
+    {
+      "name": "BongaCams",
+      "pattern": "https://pt.bongacams.com/profile/{username}"
+    },
+    {
+      "name": "Bookcrossing",
+      "pattern": "https://www.bookcrossing.com/mybookshelf/{username}/"
+    },
+    {
+      "name": "BoardGameGeek",
+      "pattern": "https://boardgamegeek.com/user/{username}"
+    },
+    {
+      "name": "BraveCommunity",
+      "pattern": "https://community.brave.com/u/{username}/"
+    },
+    {
+      "name": "BreachSta.rs Forum",
+      "pattern": "https://breachsta.rs/profile/{username}"
+    },
+    {
+      "name": "BugCrowd",
+      "pattern": "https://bugcrowd.com/{username}"
+    },
+    {
+      "name": "BuyMeACoffee",
+      "pattern": "https://buymeacoff.ee/{username}"
+    },
+    {
+      "name": "BuzzFeed",
+      "pattern": "https://buzzfeed.com/{username}"
+    },
+    {
+      "name": "Cfx.re Forum",
+      "pattern": "https://forum.cfx.re/u/{username}/summary"
+    },
+    {
+      "name": "CGTrader",
+      "pattern": "https://www.cgtrader.com/{username}"
+    },
+    {
+      "name": "CNET",
+      "pattern": "https://www.cnet.com/profiles/{username}/"
+    },
+    {
+      "name": "CSSBattle",
+      "pattern": "https://cssbattle.dev/player/{username}"
+    },
+    {
+      "name": "CTAN",
+      "pattern": "https://ctan.org/author/{username}"
+    },
+    {
+      "name": "Caddy Community",
+      "pattern": "https://caddy.community/u/{username}/summary"
+    },
+    {
+      "name": "Car Talk Community",
+      "pattern": "https://community.cartalk.com/u/{username}/summary"
+    },
+    {
+      "name": "Carbonmade",
+      "pattern": "https://{username}.carbonmade.com"
+    },
+    {
+      "name": "Career.habr",
+      "pattern": "https://career.habr.com/{username}"
+    },
+    {
+      "name": "CashApp",
+      "pattern": "https://cash.app/${username}"
+    },
+    {
+      "name": "Championat",
+      "pattern": "https://www.championat.com/user/{username}"
+    },
+    {
+      "name": "Chaos",
+      "pattern": "https://chaos.social/@{username}"
+    },
+    {
+      "name": "Chatujme.cz",
+      "pattern": "https://profil.chatujme.cz/{username}"
+    },
+    {
+      "name": "ChaturBate",
+      "pattern": "https://chaturbate.com/{username}"
+    },
+    {
+      "name": "Chess",
+      "pattern": "https://www.chess.com/member/{username}"
+    },
+    {
+      "name": "Choice Community",
+      "pattern": "https://choice.community/u/{username}/summary"
+    },
+    {
+      "name": "Clapper",
+      "pattern": "https://clapperapp.com/{username}"
+    },
+    {
+      "name": "CloudflareCommunity",
+      "pattern": "https://community.cloudflare.com/u/{username}"
+    },
+    {
+      "name": "Clozemaster",
+      "pattern": "https://www.clozemaster.com/players/{username}"
+    },
+    {
+      "name": "Clubhouse",
+      "pattern": "https://www.clubhouse.com/@{username}"
+    },
+    {
+      "name": "Code Snippet Wiki",
+      "pattern": "https://codesnippets.fandom.com/wiki/User:{username}"
+    },
+    {
+      "name": "Codeberg",
+      "pattern": "https://codeberg.org/{username}"
+    },
+    {
+      "name": "Codecademy",
+      "pattern": "https://www.codecademy.com/profiles/{username}"
+    },
+    {
+      "name": "Codechef",
+      "pattern": "https://www.codechef.com/users/{username}"
+    },
+    {
+      "name": "Codeforces",
+      "pattern": "https://codeforces.com/profile/{username}"
+    },
+    {
+      "name": "Codepen",
+      "pattern": "https://codepen.io/{username}"
+    },
+    {
+      "name": "Coders Rank",
+      "pattern": "https://profile.codersrank.io/user/{username}/"
+    },
+    {
+      "name": "Coderwall",
+      "pattern": "https://coderwall.com/{username}"
+    },
+    {
+      "name": "CodeSandbox",
+      "pattern": "https://codesandbox.io/u/{username}"
+    },
+    {
+      "name": "Codewars",
+      "pattern": "https://www.codewars.com/users/{username}"
+    },
+    {
+      "name": "Codolio",
+      "pattern": "https://codolio.com/profile/{username}"
+    },
+    {
+      "name": "Coinvote",
+      "pattern": "https://coinvote.cc/profile/{username}"
+    },
+    {
+      "name": "ColourLovers",
+      "pattern": "https://www.colourlovers.com/lover/{username}"
+    },
+    {
+      "name": "Contently",
+      "pattern": "https://{username}.contently.com/"
+    },
+    {
+      "name": "Coroflot",
+      "pattern": "https://www.coroflot.com/{username}"
+    },
+    {
+      "name": "Cplusplus",
+      "pattern": "https://cplusplus.com/user/{username}"
+    },
+    {
+      "name": "Cracked",
+      "pattern": "https://www.cracked.com/members/{username}/"
+    },
+    {
+      "name": "Cracked Forum",
+      "pattern": "https://cracked.sh/{username}"
+    },
+    {
+      "name": "Crevado",
+      "pattern": "https://{username}.crevado.com"
+    },
+    {
+      "name": "Crowdin",
+      "pattern": "https://crowdin.com/profile/{username}"
+    },
+    {
+      "name": "CryptoHack",
+      "pattern": "https://cryptohack.org/user/{username}/"
+    },
+    {
+      "name": "Cryptomator Forum",
+      "pattern": "https://community.cryptomator.org/u/{username}"
+    },
+    {
+      "name": "Cults3D",
+      "pattern": "https://cults3d.com/en/users/{username}/creations"
+    },
+    {
+      "name": "CyberDefenders",
+      "pattern": "https://cyberdefenders.org/p/{username}"
+    },
+    {
+      "name": "DEV Community",
+      "pattern": "https://dev.to/{username}"
+    },
+    {
+      "name": "DMOJ",
+      "pattern": "https://dmoj.ca/user/{username}"
+    },
+    {
+      "name": "DailyMotion",
+      "pattern": "https://www.dailymotion.com/{username}"
+    },
+    {
+      "name": "dcinside",
+      "pattern": "https://gallog.dcinside.com/{username}"
+    },
+    {
+      "name": "Dealabs",
+      "pattern": "https://www.dealabs.com/profile/{username}"
+    },
+    {
+      "name": "DeviantArt",
+      "pattern": "https://www.deviantart.com/{username}"
+    },
+    {
+      "name": "DigitalSpy",
+      "pattern": "https://forums.digitalspy.com/profile/{username}"
+    },
+    {
+      "name": "Discogs",
+      "pattern": "https://www.discogs.com/user/{username}"
+    },
+    {
+      "name": "Discord",
+      "pattern": "https://discord.com"
+    },
+    {
+      "name": "Discord.bio",
+      "pattern": "https://discords.com/api-v2/bio/details/{username}"
+    },
+    {
+      "name": "Discuss.Elastic.co",
+      "pattern": "https://discuss.elastic.co/u/{username}"
+    },
+    {
+      "name": "Diskusjon.no",
+      "pattern": "https://www.diskusjon.no"
+    },
+    {
+      "name": "Disqus",
+      "pattern": "https://disqus.com/{username}"
+    },
+    {
+      "name": "Docker Hub",
+      "pattern": "https://hub.docker.com/u/{username}/"
+    },
+    {
+      "name": "Dribbble",
+      "pattern": "https://dribbble.com/{username}"
+    },
+    {
+      "name": "Duolingo",
+      "pattern": "https://www.duolingo.com/profile/{username}"
+    },
+    {
+      "name": "Eintracht Frankfurt Forum",
+      "pattern": "https://community.eintracht.de/fans/{username}"
+    },
+    {
+      "name": "Empretienda AR",
+      "pattern": "https://{username}.empretienda.com.ar"
+    },
+    {
+      "name": "Envato Forum",
+      "pattern": "https://forums.envato.com/u/{username}"
+    },
+    {
+      "name": "Erome",
+      "pattern": "https://www.erome.com/{username}"
+    },
+    {
+      "name": "Exposure",
+      "pattern": "https://{username}.exposure.co/"
+    },
+    {
+      "name": "exophase",
+      "pattern": "https://www.exophase.com/user/{username}/"
+    },
+    {
+      "name": "EyeEm",
+      "pattern": "https://www.eyeem.com/u/{username}"
+    },
+    {
+      "name": "F3.cool",
+      "pattern": "https://f3.cool/{username}/"
+    },
+    {
+      "name": "Fameswap",
+      "pattern": "https://fameswap.com/user/{username}"
+    },
+    {
+      "name": "Fandom",
+      "pattern": "https://www.fandom.com/u/{username}"
+    },
+    {
+      "name": "Fanpop",
+      "pattern": "https://www.fanpop.com/fans/{username}"
+    },
+    {
+      "name": "Finanzfrage",
+      "pattern": "https://www.finanzfrage.net/nutzer/{username}"
+    },
+    {
+      "name": "Flickr",
+      "pattern": "https://www.flickr.com/people/{username}"
+    },
+    {
+      "name": "Flightradar24",
+      "pattern": "https://my.flightradar24.com/{username}"
+    },
+    {
+      "name": "Flipboard",
+      "pattern": "https://flipboard.com/@{username}"
+    },
+    {
+      "name": "Football",
+      "pattern": "https://www.rusfootball.info/user/{username}/"
+    },
+    {
+      "name": "FortniteTracker",
+      "pattern": "https://fortnitetracker.com/profile/all/{username}"
+    },
+    {
+      "name": "Forum Ophilia",
+      "pattern": "https://www.forumophilia.com/profile.php?mode=viewprofile&u={username}"
+    },
+    {
+      "name": "Fosstodon",
+      "pattern": "https://fosstodon.org/@{username}"
+    },
+    {
+      "name": "Framapiaf",
+      "pattern": "https://framapiaf.org/@{username}"
+    },
+    {
+      "name": "Freelancer",
+      "pattern": "https://www.freelancer.com/u/{username}"
+    },
+    {
+      "name": "Freesound",
+      "pattern": "https://freesound.org/people/{username}/"
+    },
+    {
+      "name": "GNOME VCS",
+      "pattern": "https://gitlab.gnome.org/{username}"
+    },
+    {
+      "name": "GaiaOnline",
+      "pattern": "https://www.gaiaonline.com/profiles/{username}"
+    },
+    {
+      "name": "Gamespot",
+      "pattern": "https://www.gamespot.com/profile/{username}/"
+    },
+    {
+      "name": "GameFAQs",
+      "pattern": "https://gamefaqs.gamespot.com/community/{username}"
+    },
+    {
+      "name": "GeeksforGeeks",
+      "pattern": "https://auth.geeksforgeeks.org/user/{username}"
+    },
+    {
+      "name": "Genius (Artists)",
+      "pattern": "https://genius.com/artists/{username}"
+    },
+    {
+      "name": "Genius (Users)",
+      "pattern": "https://genius.com/{username}"
+    },
+    {
+      "name": "Gesundheitsfrage",
+      "pattern": "https://www.gesundheitsfrage.net/nutzer/{username}"
+    },
+    {
+      "name": "GetMyUni",
+      "pattern": "https://www.getmyuni.com/user/{username}"
+    },
+    {
+      "name": "Giant Bomb",
+      "pattern": "https://www.giantbomb.com/profile/{username}/"
+    },
+    {
+      "name": "Giphy",
+      "pattern": "https://giphy.com/{username}"
+    },
+    {
+      "name": "GitBook",
+      "pattern": "https://{username}.gitbook.io/"
+    },
+    {
+      "name": "GitHub",
+      "pattern": "https://www.github.com/{username}"
+    },
+    {
+      "name": "Warframe Market",
+      "pattern": "https://warframe.market/profile/{username}"
+    },
+    {
+      "name": "GitLab",
+      "pattern": "https://gitlab.com/{username}"
+    },
+    {
+      "name": "Gitea",
+      "pattern": "https://gitea.com/{username}"
+    },
+    {
+      "name": "Gitee",
+      "pattern": "https://gitee.com/{username}"
+    },
+    {
+      "name": "GoodReads",
+      "pattern": "https://www.goodreads.com/{username}"
+    },
+    {
+      "name": "Google Play",
+      "pattern": "https://play.google.com/store/apps/developer?id={username}"
+    },
+    {
+      "name": "Gradle",
+      "pattern": "https://plugins.gradle.org/u/{username}"
+    },
+    {
+      "name": "Grailed",
+      "pattern": "https://www.grailed.com/{username}"
+    },
+    {
+      "name": "Gravatar",
+      "pattern": "http://en.gravatar.com/{username}"
+    },
+    {
+      "name": "Gumroad",
+      "pattern": "https://www.gumroad.com/{username}"
+    },
+    {
+      "name": "Gutefrage",
+      "pattern": "https://www.gutefrage.net/nutzer/{username}"
+    },
+    {
+      "name": "HackTheBox",
+      "pattern": "https://forum.hackthebox.com/u/{username}"
+    },
+    {
+      "name": "Hackaday",
+      "pattern": "https://hackaday.io/{username}"
+    },
+    {
+      "name": "HackenProof (Hackers)",
+      "pattern": "https://hackenproof.com/hackers/{username}"
+    },
+    {
+      "name": "HackerEarth",
+      "pattern": "https://hackerearth.com/@{username}"
+    },
+    {
+      "name": "HackerNews",
+      "pattern": "https://news.ycombinator.com/user?id={username}"
+    },
+    {
+      "name": "HackerOne",
+      "pattern": "https://hackerone.com/{username}"
+    },
+    {
+      "name": "HackerRank",
+      "pattern": "https://hackerrank.com/{username}"
+    },
+    {
+      "name": "HackerSploit",
+      "pattern": "https://forum.hackersploit.org/u/{username}"
+    },
+    {
+      "name": "HackMD",
+      "pattern": "https://hackmd.io/@{username}"
+    },
+    {
+      "name": "Harvard Scholar",
+      "pattern": "https://scholar.harvard.edu/{username}"
+    },
+    {
+      "name": "Hashnode",
+      "pattern": "https://hashnode.com/@{username}"
+    },
+    {
+      "name": "Heavy-R",
+      "pattern": "https://www.heavy-r.com/user/{username}"
+    },
+    {
+      "name": "Hive Blog",
+      "pattern": "https://hive.blog/@{username}"
+    },
+    {
+      "name": "Holopin",
+      "pattern": "https://holopin.io/@{username}"
+    },
+    {
+      "name": "Houzz",
+      "pattern": "https://houzz.com/user/{username}"
+    },
+    {
+      "name": "HubPages",
+      "pattern": "https://hubpages.com/@{username}"
+    },
+    {
+      "name": "Hubski",
+      "pattern": "https://hubski.com/user/{username}"
+    },
+    {
+      "name": "HudsonRock",
+      "pattern": "https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-username?username={username}"
+    },
+    {
+      "name": "Hugging Face",
+      "pattern": "https://huggingface.co/{username}"
+    },
+    {
+      "name": "IFTTT",
+      "pattern": "https://www.ifttt.com/p/{username}"
+    },
+    {
+      "name": "Ifunny",
+      "pattern": "https://ifunny.co/user/{username}"
+    },
+    {
+      "name": "IRC-Galleria",
+      "pattern": "https://irc-galleria.net/user/{username}"
+    },
+    {
+      "name": "Icons8 Community",
+      "pattern": "https://community.icons8.com/u/{username}/summary"
+    },
+    {
+      "name": "Image Fap",
+      "pattern": "https://www.imagefap.com/profile/{username}"
+    },
+    {
+      "name": "ImgUp.cz",
+      "pattern": "https://imgup.cz/{username}"
+    },
+    {
+      "name": "Imgur",
+      "pattern": "https://imgur.com/user/{username}"
+    },
+    {
+      "name": "imood",
+      "pattern": "https://www.imood.com/users/{username}"
+    },
+    {
+      "name": "Instagram",
+      "pattern": "https://instagram.com/{username}"
+    },
+    {
+      "name": "Instapaper",
+      "pattern": "https://www.instapaper.com/p/{username}"
+    },
+    {
+      "name": "Instructables",
+      "pattern": "https://www.instructables.com/member/{username}"
+    },
+    {
+      "name": "Intigriti",
+      "pattern": "https://app.intigriti.com/profile/{username}"
+    },
+    {
+      "name": "Ionic Forum",
+      "pattern": "https://forum.ionicframework.com/u/{username}"
+    },
+    {
+      "name": "Issuu",
+      "pattern": "https://issuu.com/{username}"
+    },
+    {
+      "name": "Itch.io",
+      "pattern": "https://{username}.itch.io/"
+    },
+    {
+      "name": "Itemfix",
+      "pattern": "https://www.itemfix.com/c/{username}"
+    },
+    {
+      "name": "Jellyfin Weblate",
+      "pattern": "https://translate.jellyfin.org/user/{username}/"
+    },
+    {
+      "name": "Jimdo",
+      "pattern": "https://{username}.jimdosite.com"
+    },
+    {
+      "name": "Joplin Forum",
+      "pattern": "https://discourse.joplinapp.org/u/{username}"
+    },
+    {
+      "name": "Jupyter Community Forum",
+      "pattern": "https://discourse.jupyter.org/u/{username}/summary"
+    },
+    {
+      "name": "Kaggle",
+      "pattern": "https://www.kaggle.com/{username}"
+    },
+    {
+      "name": "kaskus",
+      "pattern": "https://www.kaskus.co.id/@{username}"
+    },
+    {
+      "name": "Keybase",
+      "pattern": "https://keybase.io/{username}"
+    },
+    {
+      "name": "Kick",
+      "pattern": "https://kick.com/{username}"
+    },
+    {
+      "name": "Kik",
+      "pattern": "https://kik.me/{username}"
+    },
+    {
+      "name": "Kongregate",
+      "pattern": "https://www.kongregate.com/accounts/{username}"
+    },
+    {
+      "name": "Kvinneguiden",
+      "pattern": "https://forum.kvinneguiden.no"
+    },
+    {
+      "name": "LOR",
+      "pattern": "https://www.linux.org.ru/people/{username}/profile"
+    },
+    {
+      "name": "Laracast",
+      "pattern": "https://laracasts.com/@{username}"
+    },
+    {
+      "name": "Launchpad",
+      "pattern": "https://launchpad.net/~{username}"
+    },
+    {
+      "name": "LeetCode",
+      "pattern": "https://leetcode.com/{username}"
+    },
+    {
+      "name": "LemmyWorld",
+      "pattern": "https://lemmy.world/u/{username}"
+    },
+    {
+      "name": "LessWrong",
+      "pattern": "https://www.lesswrong.com/users/{username}"
+    },
+    {
+      "name": "Letterboxd",
+      "pattern": "https://letterboxd.com/{username}"
+    },
+    {
+      "name": "LibraryThing",
+      "pattern": "https://www.librarything.com/profile/{username}"
+    },
+    {
+      "name": "Lichess",
+      "pattern": "https://lichess.org/@/{username}"
+    },
+    {
+      "name": "LinkedIn",
+      "pattern": "https://linkedin.com/in/{username}"
+    },
+    {
+      "name": "Linktree",
+      "pattern": "https://linktr.ee/{username}"
+    },
+    {
+      "name": "LinuxFR.org",
+      "pattern": "https://linuxfr.org/users/{username}"
+    },
+    {
+      "name": "Listed",
+      "pattern": "https://listed.to/@{username}"
+    },
+    {
+      "name": "LiveJournal",
+      "pattern": "https://{username}.livejournal.com"
+    },
+    {
+      "name": "Lobsters",
+      "pattern": "https://lobste.rs/u/{username}"
+    },
+    {
+      "name": "LottieFiles",
+      "pattern": "https://lottiefiles.com/{username}"
+    },
+    {
+      "name": "LushStories",
+      "pattern": "https://www.lushstories.com/profile/{username}"
+    },
+    {
+      "name": "MMORPG Forum",
+      "pattern": "https://forums.mmorpg.com/profile/{username}"
+    },
+    {
+      "name": "Mamot",
+      "pattern": "https://mamot.fr/@{username}"
+    },
+    {
+      "name": "Medium",
+      "pattern": "https://medium.com/@{username}"
+    },
+    {
+      "name": "Memrise",
+      "pattern": "https://www.memrise.com/user/{username}/"
+    },
+    {
+      "name": "Minecraft",
+      "pattern": "https://api.mojang.com/users/profiles/minecraft/{username}"
+    },
+    {
+      "name": "MixCloud",
+      "pattern": "https://www.mixcloud.com/{username}/"
+    },
+    {
+      "name": "Monkeytype",
+      "pattern": "https://monkeytype.com/profile/{username}"
+    },
+    {
+      "name": "Motherless",
+      "pattern": "https://motherless.com/m/{username}"
+    },
+    {
+      "name": "Motorradfrage",
+      "pattern": "https://www.motorradfrage.net/nutzer/{username}"
+    },
+    {
+      "name": "MuseScore",
+      "pattern": "https://musescore.com/{username}"
+    },
+    {
+      "name": "MyAnimeList",
+      "pattern": "https://myanimelist.net/profile/{username}"
+    },
+    {
+      "name": "MyMiniFactory",
+      "pattern": "https://www.myminifactory.com/users/{username}"
+    },
+    {
+      "name": "Mydramalist",
+      "pattern": "https://www.mydramalist.com/profile/{username}"
+    },
+    {
+      "name": "Myspace",
+      "pattern": "https://myspace.com/{username}"
+    },
+    {
+      "name": "NICommunityForum",
+      "pattern": "https://community.native-instruments.com/profile/{username}"
+    },
+    {
+      "name": "namuwiki",
+      "pattern": "https://namu.wiki/w/%EC%82%AC%EC%9A%A9%EC%9E%90:{username}"
+    },
+    {
+      "name": "NationStates Nation",
+      "pattern": "https://nationstates.net/nation={username}"
+    },
+    {
+      "name": "NationStates Region",
+      "pattern": "https://nationstates.net/region={username}"
+    },
+    {
+      "name": "Naver",
+      "pattern": "https://blog.naver.com/{username}"
+    },
+    {
+      "name": "Needrom",
+      "pattern": "https://www.needrom.com/author/{username}/"
+    },
+    {
+      "name": "Newgrounds",
+      "pattern": "https://{username}.newgrounds.com"
+    },
+    {
+      "name": "Nextcloud Forum",
+      "pattern": "https://help.nextcloud.com/u/{username}/summary"
+    },
+    {
+      "name": "Nightbot",
+      "pattern": "https://nightbot.tv/t/{username}/commands"
+    },
+    {
+      "name": "Ninja Kiwi",
+      "pattern": "https://ninjakiwi.com/profile/{username}"
+    },
+    {
+      "name": "NintendoLife",
+      "pattern": "https://www.nintendolife.com/users/{username}"
+    },
+    {
+      "name": "NitroType",
+      "pattern": "https://www.nitrotype.com/racer/{username}"
+    },
+    {
+      "name": "NotABug.org",
+      "pattern": "https://notabug.org/{username}"
+    },
+    {
+      "name": "Nothing Community",
+      "pattern": "https://nothing.community/u/{username}"
+    },
+    {
+      "name": "Nyaa.si",
+      "pattern": "https://nyaa.si/user/{username}"
+    },
+    {
+      "name": "ObservableHQ",
+      "pattern": "https://observablehq.com/@{username}"
+    },
+    {
+      "name": "Open Collective",
+      "pattern": "https://opencollective.com/{username}"
+    },
+    {
+      "name": "OpenGameArt",
+      "pattern": "https://opengameart.org/users/{username}"
+    },
+    {
+      "name": "OpenStreetMap",
+      "pattern": "https://www.openstreetmap.org/user/{username}"
+    },
+    {
+      "name": "Odysee",
+      "pattern": "https://odysee.com/@{username}"
+    },
+    {
+      "name": "Opensource",
+      "pattern": "https://opensource.com/users/{username}"
+    },
+    {
+      "name": "OurDJTalk",
+      "pattern": "https://ourdjtalk.com/members?username={username}"
+    },
+    {
+      "name": "Outgress",
+      "pattern": "https://outgress.com/agents/{username}"
+    },
+    {
+      "name": "PCGamer",
+      "pattern": "https://forums.pcgamer.com/members/?username={username}"
+    },
+    {
+      "name": "PSNProfiles.com",
+      "pattern": "https://psnprofiles.com/{username}"
+    },
+    {
+      "name": "Packagist",
+      "pattern": "https://packagist.org/packages/{username}/"
+    },
+    {
+      "name": "Pastebin",
+      "pattern": "https://pastebin.com/u/{username}"
+    },
+    {
+      "name": "Patched",
+      "pattern": "https://patched.sh/User/{username}"
+    },
+    {
+      "name": "Patreon",
+      "pattern": "https://www.patreon.com/{username}"
+    },
+    {
+      "name": "PentesterLab",
+      "pattern": "https://pentesterlab.com/profile/{username}"
+    },
+    {
+      "name": "HotUKdeals",
+      "pattern": "https://www.hotukdeals.com/profile/{username}"
+    },
+    {
+      "name": "Mydealz",
+      "pattern": "https://www.mydealz.de/profile/{username}"
+    },
+    {
+      "name": "Chollometro",
+      "pattern": "https://www.chollometro.com/profile/{username}"
+    },
+    {
+      "name": "PepperNL",
+      "pattern": "https://nl.pepper.com/profile/{username}"
+    },
+    {
+      "name": "PepperPL",
+      "pattern": "https://www.pepper.pl/profile/{username}"
+    },
+    {
+      "name": "Preisjaeger",
+      "pattern": "https://www.preisjaeger.at/profile/{username}"
+    },
+    {
+      "name": "Pepperdeals",
+      "pattern": "https://www.pepperdeals.se/profile/{username}"
+    },
+    {
+      "name": "PepperealsUS",
+      "pattern": "https://www.pepperdeals.com/profile/{username}"
+    },
+    {
+      "name": "Promodescuentos",
+      "pattern": "https://www.promodescuentos.com/profile/{username}"
+    },
+    {
+      "name": "Periscope",
+      "pattern": "https://www.periscope.tv/{username}/"
+    },
+    {
+      "name": "Pinkbike",
+      "pattern": "https://www.pinkbike.com/u/{username}/"
+    },
+    {
+      "name": "pixelfed.social",
+      "pattern": "https://pixelfed.social/{username}/"
+    },
+    {
+      "name": "PlayStore",
+      "pattern": "https://play.google.com/store/apps/developer?id={username}"
+    },
+    {
+      "name": "Playstrategy",
+      "pattern": "https://playstrategy.org/@/{username}"
+    },
+    {
+      "name": "Plurk",
+      "pattern": "https://www.plurk.com/{username}"
+    },
+    {
+      "name": "PocketStars",
+      "pattern": "https://pocketstars.com/{username}"
+    },
+    {
+      "name": "Pokemon Showdown",
+      "pattern": "https://pokemonshowdown.com/users/{username}"
+    },
+    {
+      "name": "Polarsteps",
+      "pattern": "https://polarsteps.com/{username}"
+    },
+    {
+      "name": "Polygon",
+      "pattern": "https://www.polygon.com/users/{username}"
+    },
+    {
+      "name": "Polymart",
+      "pattern": "https://polymart.org/user/{username}"
+    },
+    {
+      "name": "Pornhub",
+      "pattern": "https://pornhub.com/users/{username}"
+    },
+    {
+      "name": "ProductHunt",
+      "pattern": "https://www.producthunt.com/@{username}"
+    },
+    {
+      "name": "programming.dev",
+      "pattern": "https://programming.dev/u/{username}"
+    },
+    {
+      "name": "Pychess",
+      "pattern": "https://www.pychess.org/@/{username}"
+    },
+    {
+      "name": "PromoDJ",
+      "pattern": "http://promodj.com/{username}"
+    },
+    {
+      "name": "Pronouns.page",
+      "pattern": "https://pronouns.page/@{username}"
+    },
+    {
+      "name": "PyPi",
+      "pattern": "https://pypi.org/user/{username}"
+    },
+    {
+      "name": "Python.org Discussions",
+      "pattern": "https://discuss.python.org/u/{username}/summary"
+    },
+    {
+      "name": "Rajce.net",
+      "pattern": "https://{username}.rajce.idnes.cz/"
+    },
+    {
+      "name": "Rarible",
+      "pattern": "https://rarible.com/marketplace/api/v4/urls/{username}"
+    },
+    {
+      "name": "Rate Your Music",
+      "pattern": "https://rateyourmusic.com/~{username}"
+    },
+    {
+      "name": "Rclone Forum",
+      "pattern": "https://forum.rclone.org/u/{username}"
+    },
+    {
+      "name": "RedTube",
+      "pattern": "https://www.redtube.com/users/{username}"
+    },
+    {
+      "name": "Redbubble",
+      "pattern": "https://www.redbubble.com/people/{username}"
+    },
+    {
+      "name": "Reddit",
+      "pattern": "https://www.reddit.com/user/{username}"
+    },
+    {
+      "name": "Realmeye",
+      "pattern": "https://www.realmeye.com/player/{username}"
+    },
+    {
+      "name": "Reisefrage",
+      "pattern": "https://www.reisefrage.net/nutzer/{username}"
+    },
+    {
+      "name": "Replit.com",
+      "pattern": "https://replit.com/@{username}"
+    },
+    {
+      "name": "ResearchGate",
+      "pattern": "https://www.researchgate.net/profile/{username}"
+    },
+    {
+      "name": "ReverbNation",
+      "pattern": "https://www.reverbnation.com/{username}"
+    },
+    {
+      "name": "Roblox",
+      "pattern": "https://www.roblox.com/user.aspx?username={username}"
+    },
+    {
+      "name": "RocketTube",
+      "pattern": "https://www.rockettube.com/{username}"
+    },
+    {
+      "name": "RoyalCams",
+      "pattern": "https://royalcams.com/profile/{username}"
+    },
+    {
+      "name": "Ruby Forums",
+      "pattern": "https://ruby-forum.com/u/{username}/summary"
+    },
+    {
+      "name": "RubyGems",
+      "pattern": "https://rubygems.org/profiles/{username}"
+    },
+    {
+      "name": "Rumble",
+      "pattern": "https://rumble.com/user/{username}"
+    },
+    {
+      "name": "RuneScape",
+      "pattern": "https://apps.runescape.com/runemetrics/app/overview/player/{username}"
+    },
+    {
+      "name": "SWAPD",
+      "pattern": "https://swapd.co/u/{username}"
+    },
+    {
+      "name": "Sbazar.cz",
+      "pattern": "https://www.sbazar.cz/{username}"
+    },
+    {
+      "name": "Scratch",
+      "pattern": "https://scratch.mit.edu/users/{username}"
+    },
+    {
+      "name": "Scribd",
+      "pattern": "https://www.scribd.com/{username}"
+    },
+    {
+      "name": "SEOForum",
+      "pattern": "https://seoforum.com/@{username}"
+    },
+    {
+      "name": "ShitpostBot5000",
+      "pattern": "https://www.shitpostbot.com/user/{username}"
+    },
+    {
+      "name": "Signal",
+      "pattern": "https://community.signalusers.org/u/{username}"
+    },
+    {
+      "name": "Sketchfab",
+      "pattern": "https://sketchfab.com/{username}"
+    },
+    {
+      "name": "Slack",
+      "pattern": "https://{username}.slack.com"
+    },
+    {
+      "name": "Slant",
+      "pattern": "https://www.slant.co/users/{username}"
+    },
+    {
+      "name": "Slashdot",
+      "pattern": "https://slashdot.org/~{username}"
+    },
+    {
+      "name": "SlideShare",
+      "pattern": "https://slideshare.net/{username}"
+    },
+    {
+      "name": "Slides",
+      "pattern": "https://slides.com/{username}"
+    },
+    {
+      "name": "SmugMug",
+      "pattern": "https://{username}.smugmug.com"
+    },
+    {
+      "name": "Smule",
+      "pattern": "https://www.smule.com/{username}"
+    },
+    {
+      "name": "Snapchat",
+      "pattern": "https://www.snapchat.com/add/{username}"
+    },
+    {
+      "name": "SOOP",
+      "pattern": "https://www.sooplive.co.kr/station/{username}"
+    },
+    {
+      "name": "SoundCloud",
+      "pattern": "https://soundcloud.com/{username}"
+    },
+    {
+      "name": "SourceForge",
+      "pattern": "https://sourceforge.net/u/{username}"
+    },
+    {
+      "name": "SoylentNews",
+      "pattern": "https://soylentnews.org/~{username}"
+    },
+    {
+      "name": "SpeakerDeck",
+      "pattern": "https://speakerdeck.com/{username}"
+    },
+    {
+      "name": "Speedrun.com",
+      "pattern": "https://speedrun.com/users/{username}"
+    },
+    {
+      "name": "Spells8",
+      "pattern": "https://forum.spells8.com/u/{username}"
+    },
+    {
+      "name": "Splice",
+      "pattern": "https://splice.com/{username}"
+    },
+    {
+      "name": "Splits.io",
+      "pattern": "https://splits.io/users/{username}"
+    },
+    {
+      "name": "Sporcle",
+      "pattern": "https://www.sporcle.com/user/{username}/people"
+    },
+    {
+      "name": "Sportlerfrage",
+      "pattern": "https://www.sportlerfrage.net/nutzer/{username}"
+    },
+    {
+      "name": "SportsRU",
+      "pattern": "https://www.sports.ru/profile/{username}/"
+    },
+    {
+      "name": "Spotify",
+      "pattern": "https://open.spotify.com/user/{username}"
+    },
+    {
+      "name": "Star Citizen",
+      "pattern": "https://robertsspaceindustries.com/citizens/{username}"
+    },
+    {
+      "name": "Status Cafe",
+      "pattern": "https://status.cafe/users/{username}"
+    },
+    {
+      "name": "Steam Community (Group)",
+      "pattern": "https://steamcommunity.com/groups/{username}"
+    },
+    {
+      "name": "Steam Community (User)",
+      "pattern": "https://steamcommunity.com/id/{username}/"
+    },
+    {
+      "name": "Strava",
+      "pattern": "https://www.strava.com/athletes/{username}"
+    },
+    {
+      "name": "SublimeForum",
+      "pattern": "https://forum.sublimetext.com/u/{username}"
+    },
+    {
+      "name": "TETR.IO",
+      "pattern": "https://ch.tetr.io/u/{username}"
+    },
+    {
+      "name": "TheMovieDB",
+      "pattern": "https://www.themoviedb.org/u/{username}"
+    },
+    {
+      "name": "TikTok",
+      "pattern": "https://www.tiktok.com/@{username}"
+    },
+    {
+      "name": "Tiendanube",
+      "pattern": "https://{username}.mitiendanube.com/"
+    },
+    {
+      "name": "Topcoder",
+      "pattern": "https://profiles.topcoder.com/{username}/"
+    },
+    {
+      "name": "Topmate",
+      "pattern": "https://topmate.io/{username}"
+    },
+    {
+      "name": "TRAKTRAIN",
+      "pattern": "https://traktrain.com/{username}"
+    },
+    {
+      "name": "Telegram",
+      "pattern": "https://t.me/{username}"
+    },
+    {
+      "name": "Tellonym.me",
+      "pattern": "https://tellonym.me/{username}"
+    },
+    {
+      "name": "Tenor",
+      "pattern": "https://tenor.com/users/{username}"
+    },
+    {
+      "name": "Terraria Forums",
+      "pattern": "https://forums.terraria.org/index.php?search/42798315/&c[users]={username}&o=relevance"
+    },
+    {
+      "name": "ThemeForest",
+      "pattern": "https://themeforest.net/user/{username}"
+    },
+    {
+      "name": "tistory",
+      "pattern": "https://{username}.tistory.com/"
+    },
+    {
+      "name": "TnAFlix",
+      "pattern": "https://www.tnaflix.com/profile/{username}"
+    },
+    {
+      "name": "TradingView",
+      "pattern": "https://www.tradingview.com/u/{username}/"
+    },
+    {
+      "name": "Trakt",
+      "pattern": "https://www.trakt.tv/users/{username}"
+    },
+    {
+      "name": "TrashboxRU",
+      "pattern": "https://trashbox.ru/users/{username}"
+    },
+    {
+      "name": "Trawelling",
+      "pattern": "https://traewelling.de/@{username}"
+    },
+    {
+      "name": "Trello",
+      "pattern": "https://trello.com/{username}"
+    },
+    {
+      "name": "TryHackMe",
+      "pattern": "https://tryhackme.com/p/{username}"
+    },
+    {
+      "name": "Tuna",
+      "pattern": "https://tuna.voicemod.net/user/{username}"
+    },
+    {
+      "name": "Tweakers",
+      "pattern": "https://tweakers.net/gallery/{username}"
+    },
+    {
+      "name": "Twitch",
+      "pattern": "https://www.twitch.tv/{username}"
+    },
+    {
+      "name": "Trovo",
+      "pattern": "https://trovo.live/s/{username}/"
+    },
+    {
+      "name": "Twitter",
+      "pattern": "https://x.com/{username}"
+    },
+    {
+      "name": "Typeracer",
+      "pattern": "https://data.typeracer.com/pit/profile?user={username}"
+    },
+    {
+      "name": "Ultimate-Guitar",
+      "pattern": "https://ultimate-guitar.com/u/{username}"
+    },
+    {
+      "name": "Unsplash",
+      "pattern": "https://unsplash.com/@{username}"
+    },
+    {
+      "name": "Untappd",
+      "pattern": "https://untappd.com/user/{username}"
+    },
+    {
+      "name": "Valorant Forums",
+      "pattern": "https://valorantforums.com/u/{username}"
+    },
+    {
+      "name": "VK",
+      "pattern": "https://vk.com/{username}"
+    },
+    {
+      "name": "VSCO",
+      "pattern": "https://vsco.co/{username}"
+    },
+    {
+      "name": "Velog",
+      "pattern": "https://velog.io/@{username}/posts"
+    },
+    {
+      "name": "Velomania",
+      "pattern": "https://forum.velomania.ru/member.php?username={username}"
+    },
+    {
+      "name": "Venmo",
+      "pattern": "https://account.venmo.com/u/{username}"
+    },
+    {
+      "name": "Vero",
+      "pattern": "https://vero.co/{username}"
+    },
+    {
+      "name": "Vimeo",
+      "pattern": "https://vimeo.com/{username}"
+    },
+    {
+      "name": "VirusTotal",
+      "pattern": "https://www.virustotal.com/gui/user/{username}"
+    },
+    {
+      "name": "VLR",
+      "pattern": "https://www.vlr.gg/user/{username}"
+    },
+    {
+      "name": "WICG Forum",
+      "pattern": "https://discourse.wicg.io/u/{username}/summary"
+    },
+    {
+      "name": "Wakatime",
+      "pattern": "https://wakatime.com/@{username}"
+    },
+    {
+      "name": "Warrior Forum",
+      "pattern": "https://www.warriorforum.com/members/{username}.html"
+    },
+    {
+      "name": "Wattpad",
+      "pattern": "https://www.wattpad.com/user/{username}"
+    },
+    {
+      "name": "WebNode",
+      "pattern": "https://{username}.webnode.cz/"
+    },
+    {
+      "name": "Weblate",
+      "pattern": "https://hosted.weblate.org/user/{username}/"
+    },
+    {
+      "name": "Weebly",
+      "pattern": "https://{username}.weebly.com/"
+    },
+    {
+      "name": "Wikidot",
+      "pattern": "http://www.wikidot.com/user:info/{username}"
+    },
+    {
+      "name": "Wikipedia",
+      "pattern": "https://en.wikipedia.org/wiki/Special:CentralAuth/{username}?uselang=qqx"
+    },
+    {
+      "name": "Windy",
+      "pattern": "https://community.windy.com/user/{username}"
+    },
+    {
+      "name": "Wix",
+      "pattern": "https://{username}.wix.com"
+    },
+    {
+      "name": "WolframalphaForum",
+      "pattern": "https://community.wolfram.com/web/{username}/home"
+    },
+    {
+      "name": "WordPress",
+      "pattern": "https://{username}.wordpress.com/"
+    },
+    {
+      "name": "WordPressOrg",
+      "pattern": "https://profiles.wordpress.org/{username}/"
+    },
+    {
+      "name": "Wordnik",
+      "pattern": "https://www.wordnik.com/users/{username}"
+    },
+    {
+      "name": "Wykop",
+      "pattern": "https://www.wykop.pl/ludzie/{username}"
+    },
+    {
+      "name": "Xbox Gamertag",
+      "pattern": "https://xboxgamertag.com/search/{username}"
+    },
+    {
+      "name": "Xvideos",
+      "pattern": "https://xvideos.com/profiles/{username}"
+    },
+    {
+      "name": "YandexMusic",
+      "pattern": "https://music.yandex/users/{username}/playlists"
+    },
+    {
+      "name": "YouNow",
+      "pattern": "https://www.younow.com/{username}/"
+    },
+    {
+      "name": "YouPic",
+      "pattern": "https://youpic.com/photographer/{username}/"
+    },
+    {
+      "name": "YouPorn",
+      "pattern": "https://youporn.com/uservids/{username}"
+    },
+    {
+      "name": "YouTube",
+      "pattern": "https://www.youtube.com/@{username}"
+    },
+    {
+      "name": "akniga",
+      "pattern": "https://akniga.org/profile/{username}"
+    },
+    {
+      "name": "authorSTREAM",
+      "pattern": "http://www.authorstream.com/{username}/"
+    },
+    {
+      "name": "babyblogRU",
+      "pattern": "https://www.babyblog.ru/user/{username}"
+    },
+    {
+      "name": "chaos.social",
+      "pattern": "https://chaos.social/@{username}"
+    },
+    {
+      "name": "couchsurfing",
+      "pattern": "https://www.couchsurfing.com/people/{username}"
+    },
+    {
+      "name": "d3RU",
+      "pattern": "https://d3.ru/user/{username}/posts"
+    },
+    {
+      "name": "dailykos",
+      "pattern": "https://www.dailykos.com/user/{username}"
+    },
+    {
+      "name": "datingRU",
+      "pattern": "http://dating.ru/{username}"
+    },
+    {
+      "name": "devRant",
+      "pattern": "https://devrant.com/users/{username}"
+    },
+    {
+      "name": "drive2",
+      "pattern": "https://www.drive2.ru/users/{username}"
+    },
+    {
+      "name": "eGPU",
+      "pattern": "https://egpu.io/forums/profile/{username}/"
+    },
+    {
+      "name": "eintracht",
+      "pattern": "https://community.eintracht.de/fans/{username}"
+    },
+    {
+      "name": "fixya",
+      "pattern": "https://www.fixya.com/users/{username}"
+    },
+    {
+      "name": "fl",
+      "pattern": "https://www.fl.ru/users/{username}"
+    },
+    {
+      "name": "forum_guns",
+      "pattern": "https://forum.guns.ru/forummisc/blog/{username}"
+    },
+    {
+      "name": "freecodecamp",
+      "pattern": "https://www.freecodecamp.org/{username}"
+    },
+    {
+      "name": "furaffinity",
+      "pattern": "https://www.furaffinity.net/user/{username}"
+    },
+    {
+      "name": "geocaching",
+      "pattern": "https://www.geocaching.com/p/default.aspx?u={username}"
+    },
+    {
+      "name": "habr",
+      "pattern": "https://habr.com/ru/users/{username}"
+    },
+    {
+      "name": "hackster",
+      "pattern": "https://www.hackster.io/{username}"
+    },
+    {
+      "name": "hunting",
+      "pattern": "https://www.hunting.ru/forum/members/?username={username}"
+    },
+    {
+      "name": "igromania",
+      "pattern": "http://forum.igromania.ru/member.php?username={username}"
+    },
+    {
+      "name": "interpals",
+      "pattern": "https://www.interpals.net/{username}"
+    },
+    {
+      "name": "irecommend",
+      "pattern": "https://irecommend.ru/users/{username}"
+    },
+    {
+      "name": "jbzd.com.pl",
+      "pattern": "https://jbzd.com.pl/uzytkownik/{username}"
+    },
+    {
+      "name": "jeuxvideo",
+      "pattern": "https://www.jeuxvideo.com/profil/{username}"
+    },
+    {
+      "name": "kofi",
+      "pattern": "https://ko-fi.com/{username}"
+    },
+    {
+      "name": "kwork",
+      "pattern": "https://kwork.ru/user/{username}"
+    },
+    {
+      "name": "last.fm",
+      "pattern": "https://last.fm/user/{username}"
+    },
+    {
+      "name": "leasehackr",
+      "pattern": "https://forum.leasehackr.com/u/{username}/summary/"
+    },
+    {
+      "name": "livelib",
+      "pattern": "https://www.livelib.ru/reader/{username}"
+    },
+    {
+      "name": "mastodon.cloud",
+      "pattern": "https://mastodon.cloud/@{username}"
+    },
+    {
+      "name": "mastodon.social",
+      "pattern": "https://mastodon.social/@{username}"
+    },
+    {
+      "name": "mastodon.xyz",
+      "pattern": "https://mastodon.xyz/@{username}"
+    },
+    {
+      "name": "mstdn.social",
+      "pattern": "https://mstdn.social/@{username}"
+    },
+    {
+      "name": "mercadolivre",
+      "pattern": "https://www.mercadolivre.com.br/perfil/{username}"
+    },
+    {
+      "name": "minds",
+      "pattern": "https://www.minds.com/{username}/"
+    },
+    {
+      "name": "moikrug",
+      "pattern": "https://moikrug.ru/{username}"
+    },
+    {
+      "name": "mstdn.io",
+      "pattern": "https://mstdn.io/@{username}"
+    },
+    {
+      "name": "nairaland.com",
+      "pattern": "https://www.nairaland.com/{username}"
+    },
+    {
+      "name": "n8n Community",
+      "pattern": "https://community.n8n.io/u/{username}/summary"
+    },
+    {
+      "name": "nnRU",
+      "pattern": "https://{username}.www.nn.ru/"
+    },
+    {
+      "name": "note",
+      "pattern": "https://note.com/{username}"
+    },
+    {
+      "name": "npm",
+      "pattern": "https://www.npmjs.com/~{username}"
+    },
+    {
+      "name": "omg.lol",
+      "pattern": "https://{username}.omg.lol"
+    },
+    {
+      "name": "opennet",
+      "pattern": "https://www.opennet.ru/~{username}"
+    },
+    {
+      "name": "osu!",
+      "pattern": "https://osu.ppy.sh/users/{username}"
+    },
+    {
+      "name": "phpRU",
+      "pattern": "https://php.ru/forum/members/?username={username}"
+    },
+    {
+      "name": "pikabu",
+      "pattern": "https://pikabu.ru/@{username}"
+    },
+    {
+      "name": "Pinterest",
+      "pattern": "https://www.pinterest.com/{username}/"
+    },
+    {
+      "name": "pr0gramm",
+      "pattern": "https://pr0gramm.com/user/{username}"
+    },
+    {
+      "name": "prog.hu",
+      "pattern": "https://prog.hu/azonosito/info/{username}"
+    },
+    {
+      "name": "satsisRU",
+      "pattern": "https://satsis.info/user/{username}"
+    },
+    {
+      "name": "sessionize",
+      "pattern": "https://sessionize.com/{username}"
+    },
+    {
+      "name": "social.tchncs.de",
+      "pattern": "https://social.tchncs.de/@{username}"
+    },
+    {
+      "name": "spletnik",
+      "pattern": "https://spletnik.ru/user/{username}"
+    },
+    {
+      "name": "svidbook",
+      "pattern": "https://www.svidbook.ru/user/{username}"
+    },
+    {
+      "name": "threads",
+      "pattern": "https://www.threads.net/@{username}"
+    },
+    {
+      "name": "toster",
+      "pattern": "https://www.toster.ru/user/{username}/answers"
+    },
+    {
+      "name": "tumblr",
+      "pattern": "https://{username}.tumblr.com/"
+    },
+    {
+      "name": "uid",
+      "pattern": "http://uid.me/{username}"
+    },
+    {
+      "name": "write.as",
+      "pattern": "https://write.as/{username}"
+    },
+    {
+      "name": "xHamster",
+      "pattern": "https://xhamster.com/users/{username}"
+    },
+    {
+      "name": "znanylekarz.pl",
+      "pattern": "https://www.znanylekarz.pl/{username}"
+    },
+    {
+      "name": "Platzi",
+      "pattern": "https://platzi.com/p/{username}/"
+    },
+    {
+      "name": "BabyRu",
+      "pattern": "https://www.baby.ru/u/{username}"
+    }
+  ]
