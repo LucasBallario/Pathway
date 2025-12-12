@@ -1,24 +1,19 @@
 'use server'
-export {searchGoogle,searchSocialMedia,searchLeaks,searchUserNames,searchPublicRecords,runFullScan}
-
 
 export async function POST(request) {
   try {
     const formData = await request.formData()
 
-    const name = formData.get("fullName")
-    const email = formData.get("email")
-    const keywords = formData.get("keyWords")
-    const region = formData.get("region")
+    const name = formData.get("fullName")?.trim().toLowerCase() || ""
+    const email = formData.get("email")?.trim().toLowerCase() || ""
+    
+    const rawKeywords = formData.get("keyWords")?.trim().toLowerCase() || ""
+    let region = formData.get("region")
 
-    name = name.trim().toLowerCase()
-    email = email.trim().toLowerCase()
-
-    const parsedKeywords = keywords
-    .toLowerCase()
-    .split(",")
-    .map(k => k.trim())
-    .filter(k => k.length > 0)
+    const keywords = rawKeywords
+      .split(",")
+      .map(k => k.trim())
+      .filter(k => k.length > 0)
 
     const validRegions = [
       "AR","US","MX","ES","CO","CL","PE","VE","EC","BR",
@@ -29,8 +24,7 @@ export async function POST(request) {
       region = "GLOBAL"
     }
 
-
-    if (!name && parsedKeywords.length === 0) {
+    if (!name && keywords.length === 0) {
       return Response.json(
         { error: "Information is missing" },
         { status: 400 }
@@ -39,7 +33,12 @@ export async function POST(request) {
 
     return Response.json({
       message: "Form received",
-      data: { name, email, keywords, region }
+      data: {
+        name,
+        email,
+        keywords,
+        region
+      }
     })
 
   } catch (error) {
@@ -49,10 +48,4 @@ export async function POST(request) {
       { status: 500 }
     )
   }
-
-
-
-  
-
-
 }

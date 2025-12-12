@@ -23,6 +23,7 @@ export default function Page() {
   const handleFormSubmit = (e) => {
     e.preventDefault()
     const data = new FormData()
+    
     data.append("fullName", formData.fullName)
     data.append("email", formData.email)
     data.append("keyWords", formData.keyWords)

@@ -12,7 +12,7 @@ export default function Results() {
   const sections = [
     { title: "Google", key: "google" },
     { title: "Social Media", key: "social" },
-    { title: "Usernames", key: "username" },
+    { title: "Usernames", key: "usernames" },
     { title: "Data Leaks", key: "leak" },
     { title: "Public Records", key: "public" },
   ]
