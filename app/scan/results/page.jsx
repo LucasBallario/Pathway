@@ -1,5 +1,5 @@
 import React from 'react'
-import ResultSection from '../../../components/ResultSection'
+import ResultSection from '../../components/ResultSection'
 import { useScan } from "@/app/context/ScanContext"
 
 export default function Results() {
