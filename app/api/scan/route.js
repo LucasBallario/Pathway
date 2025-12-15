@@ -1,6 +1,6 @@
 'use server'
 
-import { runFullScan } from "@/lib/search"
+import { runFullScan } from "../../../lib/search"
 
 export async function POST(request) {
     const formData = await request.formData()
