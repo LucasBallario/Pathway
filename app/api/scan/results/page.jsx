@@ -16,7 +16,7 @@ export default function Results() {
     { title: "Data Leaks", key: "leak" },
     { title: "Public Records", key: "public" },
   ]
-
+  console.log(scanResults)
   return (
     <div className="space-y-8">
       {sections.map((section) => (
@@ -26,6 +26,7 @@ export default function Results() {
           items={scanResults[section.key]}
         />
       ))}
+     
     </div>
   )
 }
