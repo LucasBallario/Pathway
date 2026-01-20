@@ -2,17 +2,19 @@ import ResultItem from "./ResultItem"
 
 export default function ResultSection({ title, items }) {
   return (
-    <section className="bg-white rounded-xl p-6 shadow-sm border border-slate-200 mb-6">
-      <h2 className="text-xl font-semibold text-slate-800 mb-4">
+    <section className="mb-8">
+      <h2 className="text-xl font-semibold text-foreground mb-4">
         {title}
       </h2>
 
       {(!items || items.length === 0) ? (
-        <p className="text-slate-500 text-sm">
-          No results found in this category.
-        </p>
+        <div className="bg-secondary/30 rounded-xl p-8 text-center border border-border">
+          <p className="text-muted-foreground text-sm">
+            No results found in this category.
+          </p>
+        </div>
       ) : (
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {items.map((item, index) => (
             <ResultItem key={index} item={item} />
           ))}
