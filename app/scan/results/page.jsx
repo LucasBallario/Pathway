@@ -19,8 +19,8 @@ export default function Results() {
     { title: "Google", key: "google" },
     { title: "Social Media", key: "social" },
     { title: "Usernames", key: "usernames" },
-    { title: "Data Leaks", key: "leak" },
-    { title: "Public Records", key: "public" },
+    { title: "Data Leaks", key: "leaks" },
+    { title: "Public Records", key: "publicRecords" },
   ]
 
   const adaptedResults = {
