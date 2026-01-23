@@ -63,7 +63,7 @@ export default function ConsentPage() {
             </label>
           </div>
 
-          <Button onClick={() => handleContinue} disabled={!isConsented} size="lg" className="w-full">
+          <Button onClick={() => handleContinue()} disabled={!isConsented} size="lg" className="w-full">
             Continue
           </Button>
 

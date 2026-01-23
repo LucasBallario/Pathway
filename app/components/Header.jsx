@@ -12,33 +12,37 @@ import { useRouter } from 'next/navigation'
 export default function Header() {
   const Router = useRouter()
   return (
-    <div className="flex flex-col items-center justify-center text-white py-16 px-4">
-      <div className="mb-6">
-        <h1 className="text-4xl font-bold tracking-tight">Pathway</h1>
-      </div>
-
-      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-4 lg:gap-8 max-w-4xl">
-        <div className="flex flex-col flex-1 text-center lg:text-left items-center lg:items-start">
-          <h2 className="text-3xl lg:text-4xl font-semibold leading-tight text-balance">
+    <div className="flex flex-col items-center text-white">
+      {/* Hero Section */}
+      <div className="min-h-[90vh] flex flex-col lg:flex-row items-center justify-center px-6 lg:px-16 w-full max-w-6xl mx-auto gap-12 lg:gap-20">
+        {/* Left - Text Content */}
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1">
+          <p className="text-xs tracking-[0.25em] uppercase text-slate-500 mb-6">Pathway</p>
+          
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium leading-tight text-balance">
             Find your digital footprint before others do
-          </h2>
-          <p className="text-lg lg:text-xl text-slate-300 mt-4 leading-relaxed">
-            We analyze your online presence to help you <br />
-            protect your privacy and reduce digital risks
+          </h1>
+          
+          <p className="text-base text-slate-400 mt-5 leading-relaxed max-w-md font-light">
+            We analyze your online presence to help you protect your privacy and reduce digital risks
           </p>
-          <button onClick={() => Router.push('/consent')} className='px-12 py-4 rounded-xl bg-slate-500 hover:bg-slate-600 transition-colors font-bold mt-6 cursor-pointer'>
-            Start
+
+          <button 
+            onClick={() => Router.push('/consent')} 
+            className='px-8 py-3 rounded-full bg-white text-black hover:bg-slate-200 transition-colors font-medium text-sm mt-8 cursor-pointer'
+          >
+            Get Started
           </button>
         </div>
-       
 
-        <div className="flex justify-center flex-shrink-0">
+        {/* Right - Phone Image */}
+        <div className="flex-shrink-0">
           <Image
-            src={Phone}
+            src={Phone || "/placeholder.svg"}
             alt="Phone mockup showing Pathway app interface for digital privacy protection"
-            height={256}
-            width={256}
-            className="h-48 w-48 lg:h-64 lg:w-64 object-contain"
+            height={380}
+            width={380}
+            className="h-72 w-72 md:h-80 md:w-80 lg:h-[380px] lg:w-[380px] object-contain"
           />
         </div>
       </div>

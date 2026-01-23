@@ -3,7 +3,7 @@ import ResultItem from "./ResultItem"
 export default function ResultSection({ title, items }) {
   return (
     <section className="mb-8">
-      <h2 className="text-xl font-semibold text-foreground mb-4">
+      <h2 className="text-xl text-white font-semibold text-foreground mb-4">
         {title}
       </h2>
 
