@@ -2,10 +2,12 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import {useScan} from '../context/ScanContext'
+import ScanningLoader from '../components/ScanningLoader'
 
 export default function Page() {
   const router = useRouter()
   const { setScanResults } = useScan()
+  const [isScanning, setIsScanning] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -23,6 +25,8 @@ export default function Page() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault()
+    setIsScanning(true)
+
     const data = new FormData()
     
     data.append("fullName", formData.fullName)
@@ -43,6 +47,7 @@ export default function Page() {
       })
       .catch(error => {
         console.error('Error fetching JSON:', error);
+        setIsScanning(false);
 
       })
 
@@ -50,6 +55,7 @@ export default function Page() {
 
   return (
     <div className='min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-6'>
+      {isScanning && <ScanningLoader />}
       <div className='w-full max-w-md bg-white shadow-xl rounded-2xl p-8 border border-slate-200'>
         <div className='mb-8'>
           <h1 className='text-3xl font-bold text-slate-800 text-center mb-2'>Search Information</h1>
@@ -127,7 +133,7 @@ export default function Page() {
             type='submit'
             className='w-full bg-slate-600 hover:bg-black cursor-pointer text-white font-semibold py-3 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg'
           >
-            Search
+            {isScanning ? 'Processing...' : 'Search'}
           </button>
         </form>
       </div>
