@@ -4,7 +4,6 @@ import { Loader2, CheckCircle2, Search, Globe, Users, Database, FileText } from 
 export default function ScanningLoader() {
   const [currentStep, setCurrentStep] = useState(0);
 
-  // Professional, user-friendly steps in English
   const steps = [
     { label: "Initializing search engine...", icon: <Search className="w-5 h-5" /> },
     { label: "Querying Google public index...", icon: <Globe className="w-5 h-5" /> },
@@ -24,13 +23,10 @@ export default function ScanningLoader() {
   }, []);
 
   return (
-    // Background overlay with blur
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
       
-      {/* Main Card */}
       <div className="w-full max-w-md bg-gray-900 border border-gray-700 rounded-2xl shadow-2xl overflow-hidden">
         
-        {/* Header */}
         <div className="bg-gray-800/50 p-6 text-center border-b border-gray-700">
           <div className="inline-flex items-center justify-center p-3 bg-blue-500/10 rounded-full mb-4">
             <Loader2 className="w-8 h-8 text-blue-500 animate-spin" />
@@ -39,7 +35,6 @@ export default function ScanningLoader() {
           <p className="text-sm text-gray-400 mt-1">Please wait while we gather the information.</p>
         </div>
 
-        {/* Steps List */}
         <div className="p-6 space-y-5">
           {steps.map((step, index) => {
             const isActive = index === currentStep;
@@ -69,7 +64,6 @@ export default function ScanningLoader() {
                   )}
                 </div>
 
-                {/* Text */}
                 <span className={`text-sm font-medium ${
                   isActive ? 'text-white' : 'text-gray-400'
                 }`}>
@@ -80,7 +74,6 @@ export default function ScanningLoader() {
           })}
         </div>
 
-        {/* Footer Notice */}
         <div className="p-4 bg-gray-800/30 text-center border-t border-gray-700">
           <p className="text-xs text-gray-500">
             This process may take up to 30 seconds. Do not close this window.

@@ -10,9 +10,6 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <Globe className="w-6 h-6 text-white" />
-              </div>
               <h3 className="text-lg font-bold text-white">Pathway</h3>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
