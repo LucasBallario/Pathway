@@ -1,4 +1,13 @@
+"use client"
+
+import { motion } from "motion/react"
 import { Shield, Database, AlertCircle } from "lucide-react"
+import {
+  fadeInUp,
+  staggerContainer,
+  staggerItem,
+  viewReveal,
+} from "@/lib/motion-presets"
 
 export default function Information() {
   const benefits = [
@@ -20,36 +29,53 @@ export default function Information() {
   ]
 
   return (
-    <section className="w-full py-16 mt-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Why use Pathway?</h2>
-          <p className="text-gray-300 text-lg">
+    <section className="mt-16 w-full bg-midnight-void px-4 py-16 sm:px-6 md:mt-[64px] lg:px-8">
+      <div className="mx-auto max-w-6xl">
+        <motion.div
+          className="mb-12 text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewReveal}
+          variants={fadeInUp}
+        >
+          <h2 className="mb-3 text-[2.125rem] font-bold leading-[1.07] text-polar-white sm:text-[2.75rem]">
+            Why use Pathway?
+          </h2>
+          <p className="text-lg font-normal leading-[1.28] text-polar-white">
             Protect your personal information from threats and unauthorized exposure
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <motion.div
+          className="grid grid-cols-1 gap-6 md:grid-cols-3"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewReveal}
+        >
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon
             return (
-              <div
+              <motion.div
                 key={index}
-                className="bg-slate-800 rounded-lg p-6 border border-slate-700 hover:border-slate-600 hover:bg-slate-750 transition-all duration-200"
+                variants={staggerItem}
+                whileHover={{ y: -4 }}
+                transition={{ type: "spring", stiffness: 380, damping: 24 }}
+                className="rounded-lg border border-dark-carbon bg-deep-space p-6 transition-colors duration-200"
               >
                 <div className="flex items-start gap-4">
-                  <div className="mt-1">
-                    <Icon className="w-6 h-6 text-blue-400" strokeWidth={2} />
+                  <div className="mt-1 text-polar-white">
+                    <Icon className="h-6 w-6" strokeWidth={1.5} />
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold text-lg mb-2">{benefit.title}</h3>
-                    <p className="text-gray-300 text-sm leading-relaxed">{benefit.description}</p>
+                    <h3 className="mb-2 text-[23px] font-bold leading-[1.11] text-polar-white">{benefit.title}</h3>
+                    <p className="text-base font-normal leading-relaxed text-ash-gray">{benefit.description}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

@@ -1,6 +1,13 @@
 "use client"
 
+import { motion } from "motion/react"
 import { Upload, Search, FileCheck } from "lucide-react"
+import {
+  fadeInUp,
+  staggerContainer,
+  staggerItem,
+  viewReveal,
+} from "@/lib/motion-presets"
 
 const steps = [
   {
@@ -25,55 +32,64 @@ const steps = [
 
 export default function Instructions() {
   return (
-    <section className="w-full py-24 px-4 md:px-8 bg-background">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-slate-400 text-sm font-medium tracking-widest uppercase mb-4">
+    <section className="w-full bg-deep-space px-4 py-16 md:px-8 md:py-24">
+      <div className="mx-auto max-w-6xl">
+        <motion.div
+          className="mb-16 text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewReveal}
+          variants={fadeInUp}
+        >
+          <p className="mb-4 text-[13px] font-normal uppercase tracking-[0.18em] text-ash-gray">
             How it works
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight text-balance">
+          <h2 className="text-balance text-[2.125rem] font-bold leading-[1.07] tracking-tight text-polar-white md:text-[2.75rem]">
             Security at every step
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
+          <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg font-normal leading-[1.28] text-ash-gray">
             Protecting your digital identity has never been easier. Follow these three simple steps to secure your online presence.
           </p>
-        </div>
+        </motion.div>
 
-        {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <motion.div
+          className="grid grid-cols-1 gap-6 md:grid-cols-3"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewReveal}
+        >
           {steps.map((step, index) => (
-            <div
+            <motion.div
               key={step.number}
-              className="group relative bg-card border border-border rounded-xl p-8 transition-all duration-300 hover:border-slate-500/50 hover:shadow-lg hover:shadow-slate-500/5"
+              variants={staggerItem}
+              whileHover={{ y: -5 }}
+              transition={{ type: "spring", stiffness: 400, damping: 26 }}
+              className="group relative rounded-lg border border-dark-carbon bg-midnight-void p-8 transition-colors duration-300 hover:border-slate"
             >
-              {/* Step number badge */}
               <div className="absolute -top-3 left-6">
-                <span className="inline-flex items-center justify-center px-3 py-1 text-xs font-bold bg-slate-500 text-white rounded-full">
+                <span className="inline-flex items-center justify-center rounded-full bg-amber-glow px-3 py-1 text-[13px] font-normal leading-[1.43] text-midnight-void">
                   Step {step.number}
                 </span>
               </div>
 
-              {/* Icon container */}
-              <div className="w-14 h-14 rounded-lg bg-slate-800 flex items-center justify-center mb-6 mt-2 group-hover:bg-slate-700 transition-colors duration-300">
-                <step.icon className="w-7 h-7 text-slate-400" />
-              </div>
+              <motion.div
+                className="mb-6 mt-2 flex h-14 w-14 items-center justify-center rounded-lg border border-dark-carbon bg-deep-space text-polar-white transition-colors duration-300 group-hover:border-slate"
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 450, damping: 18 }}
+              >
+                <step.icon className="h-7 w-7" strokeWidth={1.5} />
+              </motion.div>
 
-              {/* Content */}
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                {step.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {step.description}
-              </p>
+              <h3 className="mb-3 text-[23px] font-bold leading-[1.11] text-polar-white">{step.title}</h3>
+              <p className="text-base font-normal leading-relaxed text-ash-gray">{step.description}</p>
 
-              {/* Connector line (hidden on last item and mobile) */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-px bg-border" />
+                <div className="absolute top-1/2 -right-3 hidden h-px w-6 bg-dark-carbon md:block" />
               )}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

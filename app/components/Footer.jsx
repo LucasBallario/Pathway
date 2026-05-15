@@ -1,129 +1,163 @@
+"use client"
+
 import Link from "next/link"
-import { Mail, Linkedin, Twitter, Globe } from "lucide-react"
+import { motion } from "motion/react"
+import { Mail, Linkedin, Twitter } from "lucide-react"
+import { fadeInUp, staggerContainer, staggerItem, viewReveal } from "@/lib/motion-presets"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-slate-950 border-t border-slate-800">
+    <motion.footer
+      className="border-t border-dark-carbon bg-deep-space"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={viewReveal}
+      transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          <div className="space-y-4">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewReveal}
+        >
+          <motion.div variants={staggerItem} className="space-y-4">
             <div className="flex items-center gap-2">
-              <h3 className="text-lg font-bold text-white">Pathway</h3>
+              <h3 className="text-[18px] font-bold leading-[1.28] text-polar-white">Pathway</h3>
             </div>
-            <p className="text-slate-400 text-sm leading-relaxed">
+            <p className="text-ash-gray text-[13px] leading-[1.43]">
             Track and understand your digital footprint. Take control of your online identity.
             </p>
-          </div>
+          </motion.div>
 
-          <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Product</h4>
+          <motion.div variants={staggerItem}>
+            <h4 className="mb-4 text-[13px] font-normal uppercase tracking-[0.12em] text-ash-gray">
+              Product
+            </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                 Characteristics
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                     Security
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                   Roadmap
                 </Link>
               </li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Company</h4>
+          <motion.div variants={staggerItem}>
+            <h4 className="mb-4 text-[13px] font-normal uppercase tracking-[0.12em] text-ash-gray">
+              Company
+            </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                   Contact
                 </Link>
               </li>
-             
-            </ul>
-          </div>
 
-          <div>
-            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">Legal</h4>
+            </ul>
+          </motion.div>
+
+          <motion.div variants={staggerItem}>
+            <h4 className="mb-4 text-[13px] font-normal uppercase tracking-[0.12em] text-ash-gray">
+              Legal
+            </h4>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                   Privacity
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                   Terms
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                   Cookies
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <Link href="#" className="text-polar-white text-[14px] font-normal underline-offset-4 hover:underline">
                   Support
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="border-t border-slate-800 py-8" />
+        <div className="border-t border-dark-carbon py-8" />
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-slate-500 text-sm text-center md:text-left">
+        <motion.div
+          className="flex flex-col md:flex-row items-center justify-between gap-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewReveal}
+          variants={fadeInUp}
+        >
+          <p className="text-ash-gray text-[13px] text-center md:text-left">
             © {currentYear} Pathway. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-4">
-            <a
+          <div className="flex items-center gap-2">
+            <motion.a
               href="https://twitter.com"
               aria-label="Twitter"
-              className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-cyan-400 transition-colors"
+              whileHover={{ y: -2, scale: 1.05 }}
+              whileTap={{ scale: 0.96 }}
+              className="rounded-lg p-2 text-ash-gray transition-colors hover:bg-midnight-void hover:text-polar-white"
             >
               <Twitter className="w-5 h-5" />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="https://linkedin.com"
               aria-label="LinkedIn"
-              className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-cyan-400 transition-colors"
+              whileHover={{ y: -2, scale: 1.05 }}
+              whileTap={{ scale: 0.96 }}
+              className="rounded-lg p-2 text-ash-gray transition-colors hover:bg-midnight-void hover:text-polar-white"
             >
               <Linkedin className="w-5 h-5" />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="mailto:info@pathway.com"
               aria-label="Email"
-              className="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-cyan-400 transition-colors"
+              whileHover={{ y: -2, scale: 1.05 }}
+              whileTap={{ scale: 0.96 }}
+              className="rounded-lg p-2 text-ash-gray transition-colors hover:bg-midnight-void hover:text-polar-white"
             >
               <Mail className="w-5 h-5" />
-            </a>
+            </motion.a>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </footer>
+    </motion.footer>
   )
 }

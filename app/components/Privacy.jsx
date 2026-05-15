@@ -1,6 +1,13 @@
 "use client"
 
+import { motion } from "motion/react"
 import { GlobeLock, ShieldOff, BookCheck, BadgeX } from "lucide-react"
+import {
+  fadeInUp,
+  staggerContainer,
+  staggerItem,
+  viewReveal,
+} from "@/lib/motion-presets"
 
 export default function Privacy() {
   const features = [
@@ -27,37 +34,56 @@ export default function Privacy() {
   ]
 
   return (
-    <section className="py-16 mt-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto mb-16 text-center">
-        <h2 className="text-4xl text-white sm:text-5xl font-bold text-pretty mb-4 text-foreground">Your Privacy Matters to Us</h2>
-        <p className="text-lg text-muted-foreground">
+    <section className="mt-16 bg-midnight-void px-4 py-16 sm:px-6 md:mt-[64px] lg:px-8">
+      <motion.div
+        className="mx-auto mb-16 max-w-4xl text-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewReveal}
+        variants={fadeInUp}
+      >
+        <h2 className="mb-4 text-balance text-[2.125rem] font-bold leading-[1.03] text-polar-white sm:text-[2.75rem]">
+          Your Privacy Matters to Us
+        </h2>
+        <p className="text-lg font-normal leading-[1.28] text-ash-gray">
           We are committed to protecting your data with transparent, secure practices
         </p>
-      </div>
+      </motion.div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      <motion.div
+        className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewReveal}
+      >
         {features.map((feature, index) => {
           const Icon = feature.icon
           return (
-            <div
+            <motion.div
               key={index}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card p-8 transition-all duration-300 hover:shadow-lg hover:border-primary/50"
+              variants={staggerItem}
+              whileHover={{ y: -4 }}
+              transition={{ type: "spring", stiffness: 380, damping: 28 }}
+              className="relative overflow-hidden rounded-lg border border-dark-carbon bg-deep-space p-8 transition-colors duration-300 hover:border-slate"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
               <div className="relative z-10 flex flex-col gap-4">
-                <div className="inline-flex w-fit rounded-lg bg-primary/10 p-3">
-                  <Icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
-                </div>
+                <motion.div
+                  className="inline-flex w-fit rounded-lg border border-dark-carbon bg-midnight-void p-3 text-polar-white"
+                  whileHover={{ scale: 1.06 }}
+                  transition={{ type: "spring", stiffness: 500, damping: 20 }}
+                >
+                  <Icon className="h-6 w-6" strokeWidth={1.5} />
+                </motion.div>
 
-                <h3 className="text-xl font-semibold text-foreground leading-tight">{feature.title}</h3>
+                <h3 className="text-xl font-bold leading-tight text-polar-white">{feature.title}</h3>
 
-                <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
+                <p className="text-sm font-normal leading-relaxed text-ash-gray">{feature.description}</p>
               </div>
-            </div>
+            </motion.div>
           )
         })}
-      </div>
+      </motion.div>
     </section>
   )
 }

@@ -1,8 +1,10 @@
 'use client'
 import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'motion/react'
 import { useRouter } from 'next/navigation'
 import {useScan} from '../context/ScanContext'
 import ScanningLoader from '../components/ScanningLoader'
+import { fadeInUp, scaleIn, staggerContainer, staggerItem } from '@/lib/motion-presets'
 
 export default function Page() {
   const router = useRouter()
@@ -20,7 +22,7 @@ export default function Page() {
       ...prev,
       [name] : value }))
 
-    
+
   }
 
   const handleFormSubmit = (e) => {
@@ -28,7 +30,7 @@ export default function Page() {
     setIsScanning(true)
 
     const data = new FormData()
-    
+
     data.append("fullName", formData.fullName)
     data.append("email", formData.email)
     data.append("keyWords", formData.keyWords)
@@ -38,11 +40,11 @@ export default function Page() {
       .then(async response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
-        } 
+        }
         const result = await response.json()
         setScanResults(result.results)
         router.push("/scan/results")
-        console.log("SCAN RESULT:", result) 
+        console.log("SCAN RESULT:", result)
 
       })
       .catch(error => {
@@ -54,54 +56,67 @@ export default function Page() {
   }
 
   return (
-    <div className='min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-6'>
-      {isScanning && <ScanningLoader />}
-      <div className='w-full max-w-md bg-white shadow-xl rounded-2xl p-8 border border-slate-200'>
-        <div className='mb-8'>
-          <h1 className='text-3xl font-bold text-slate-800 text-center mb-2'>Search Information</h1>
-          <p className='text-slate-500 text-center text-sm'>Complete the form to begin your search</p>
-        </div>
+    <div className='flex min-h-screen items-center justify-center bg-midnight-void p-6'>
+      <AnimatePresence>
+        {isScanning && <ScanningLoader key="scan-loader" />}
+      </AnimatePresence>
+      <motion.div
+        className='w-full max-w-md rounded-lg border border-dark-carbon bg-deep-space p-8'
+        variants={scaleIn}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.div className='mb-8' variants={fadeInUp} initial="hidden" animate="visible">
+          <h1 className='mb-2 text-center text-[1.75rem] font-bold leading-[1.22] text-polar-white'>Search Information</h1>
+          <p className='text-center text-[13px] font-normal leading-[1.43] text-ash-gray'>Complete the form to begin your search</p>
+        </motion.div>
 
-        <form onSubmit={handleFormSubmit} className='space-y-6'>
-          <div className='space-y-2'>
-            <label className='block text-sm font-medium text-slate-700'>
+        <motion.form
+          onSubmit={handleFormSubmit}
+          className='space-y-6'
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.div variants={staggerItem} className='space-y-2'>
+            <label className='block text-[14px] font-normal text-polar-white'>
               Full Name/Alias
             </label>
             <input onChange={handleChange} value={formData.fullName} name='fullName'
-              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-600 focus:border-transparent outline-none transition-all' 
+              className='w-full rounded-lg border border-dark-carbon bg-midnight-void px-4 py-3 text-[14px] text-polar-white outline-none transition-colors placeholder:text-ash-gray focus:border-slate focus:ring-1 focus:ring-slate'
               type='text'
               placeholder='Enter name or alias'
             />
-          </div>
+          </motion.div>
 
-          <div className='space-y-2'>
-            <label className='block text-sm font-medium text-slate-700'>
+          <motion.div variants={staggerItem} className='space-y-2'>
+            <label className='block text-[14px] font-normal text-polar-white'>
               Gmail
             </label>
             <input onChange={handleChange} value={formData.email} name='email'
-              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-600 focus:border-transparent outline-none transition-all' 
+              className='w-full rounded-lg border border-dark-carbon bg-midnight-void px-4 py-3 text-[14px] text-polar-white outline-none transition-colors placeholder:text-ash-gray focus:border-slate focus:ring-1 focus:ring-slate'
               type='email'
               placeholder='example@gmail.com'
             />
-          </div>
+          </motion.div>
 
-          <div className='space-y-2'>
-            <label className='block text-sm font-medium text-slate-700'>
+          <motion.div variants={staggerItem} className='space-y-2'>
+            <label className='block text-[14px] font-normal text-polar-white'>
               Additional Keywords
             </label>
             <input onChange={handleChange} value={formData.keyWords} name='keyWords'
-              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-600 focus:border-transparent outline-none transition-all' 
+              className='w-full rounded-lg border border-dark-carbon bg-midnight-void px-4 py-3 text-[14px] text-polar-white outline-none transition-colors placeholder:text-ash-gray focus:border-slate focus:ring-1 focus:ring-slate'
               type='text'
               placeholder='Enter keywords separated by commas'
             />
-          </div>
+          </motion.div>
 
-          <div className='space-y-2'>
-            <label className='block text-sm font-medium text-slate-700'>
+          <motion.div variants={staggerItem} className='space-y-2'>
+            <label className='block text-[14px] font-normal text-polar-white'>
               Country
             </label>
             <select onChange={handleChange} value={formData.region} name='region'
-              className='w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-600 focus:border-transparent outline-none transition-all bg-white cursor-pointer'
+              className='w-full cursor-pointer rounded-lg border border-dark-carbon bg-midnight-void px-4 py-3 text-[14px] text-polar-white outline-none transition-colors focus:border-slate focus:ring-1 focus:ring-slate'
             >
               <option value=''>Select a country</option>
               <option value='AR'>Argentina</option>
@@ -127,16 +142,20 @@ export default function Page() {
               <option value='CU'>Cuba</option>
               <option value='PR'>Puerto Rico</option>
             </select>
-          </div>
+          </motion.div>
 
-          <button
+          <motion.button
             type='submit'
-            className='w-full bg-slate-600 hover:bg-black cursor-pointer text-white font-semibold py-3 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg'
+            variants={staggerItem}
+            whileHover={{ y: -1 }}
+            whileTap={{ scale: 0.985 }}
+            transition={{ type: 'spring', stiffness: 480, damping: 22 }}
+            className='w-full cursor-pointer rounded-[4.5px] bg-gradient-to-b from-[#3a3a3a] to-dark-carbon py-3 text-[16px] font-normal text-absolute-zero transition-opacity hover:opacity-90'
           >
             {isScanning ? 'Processing...' : 'Search'}
-          </button>
-        </form>
-      </div>
+          </motion.button>
+        </motion.form>
+      </motion.div>
     </div>
   )
 }

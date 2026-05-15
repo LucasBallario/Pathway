@@ -1,7 +1,9 @@
 'use client'
 import React from 'react'
+import { motion } from 'motion/react'
 import ResultSection from '../../components/ResultSection'
 import { useScan } from "@/app/context/ScanContext"
+import { fadeInUp } from '@/lib/motion-presets'
 
 
 
@@ -12,7 +14,18 @@ export default function Results() {
   console.log(scanResults)
 
   if (!scanResults) {
-    return <p>No scan data available. Please go back and run a scan.</p>
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-midnight-void px-4 py-16">
+        <motion.p
+          className="text-center text-[14px] font-normal text-ash-gray"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+        >
+          No scan data available. Please go back and run a scan.
+        </motion.p>
+      </main>
+    )
   }
 
   const sections = [
@@ -32,18 +45,19 @@ export default function Results() {
       source: "username",
     })),
   }
-  
+
 
   return (
-    <div className="space-y-8">
-      {sections.map((section) => (
-        <ResultSection
-          key={section.key}
-          title={section.title}
-          items={adaptedResults[section.key]}
-        />
-      ))}
-     
-    </div>
+    <main className="min-h-screen bg-midnight-void px-4 py-10 md:px-8 md:py-16">
+      <div className="mx-auto max-w-6xl space-y-16">
+        {sections.map((section) => (
+          <ResultSection
+            key={section.key}
+            title={section.title}
+            items={adaptedResults[section.key]}
+          />
+        ))}
+      </div>
+    </main>
   )
 }

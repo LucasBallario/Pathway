@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Lato } from 'next/font/google';
-import {ScanProvider} from './context/ScanContext'
+import { Inter, IBM_Plex_Mono } from "next/font/google";
+import { ScanProvider } from "./context/ScanContext";
+import { MotionProvider } from "@/components/MotionProvider";
 
-const lato = Lato({
-  subsets: ['latin'], 
-   weight: ['400', '700'], 
-   display: 'swap',
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-aeonik",
+  display: "swap",
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-input",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -20,15 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
-      <html lang="en" className={lato.className}>
-      <body className="bg-black"
-      >
-       <ScanProvider >
-        {children}
-      </ScanProvider>
+    <html lang="en" className={`${inter.variable} ${ibmPlexMono.variable}`}>
+      <body className={`${inter.className} bg-background text-foreground`}>
+        <MotionProvider>
+          <ScanProvider>{children}</ScanProvider>
+        </MotionProvider>
       </body>
     </html>
-   
   );
 }

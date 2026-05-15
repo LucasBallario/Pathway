@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { Loader2, CheckCircle2, Search, Globe, Users, Database, FileText } from 'lucide-react';
+import { softSpring, smoothEase } from '@/lib/motion-presets';
 
 export default function ScanningLoader() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -14,7 +16,6 @@ export default function ScanningLoader() {
   ];
 
   useEffect(() => {
-    // Updates the step every 4 seconds to match the ~25s total scan time
     const interval = setInterval(() => {
       setCurrentStep((prev) => (prev < steps.length - 1 ? prev + 1 : prev));
     }, 4000);
@@ -23,63 +24,114 @@ export default function ScanningLoader() {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-      
-      <div className="w-full max-w-md bg-gray-900 border border-gray-700 rounded-2xl shadow-2xl overflow-hidden">
-        
-        <div className="bg-gray-800/50 p-6 text-center border-b border-gray-700">
-          <div className="inline-flex items-center justify-center p-3 bg-blue-500/10 rounded-full mb-4">
-            <Loader2 className="w-8 h-8 text-blue-500 animate-spin" />
-          </div>
-          <h2 className="text-xl font-semibold text-white">Scanning in progress</h2>
-          <p className="text-sm text-gray-400 mt-1">Please wait while we gather the information.</p>
+    <motion.div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[#101010]/85 p-4 backdrop-blur-sm"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.35, ease: smoothEase }}
+    >
+
+      <motion.div
+        className="w-full max-w-md overflow-hidden rounded-lg border border-dark-carbon bg-deep-space"
+        initial={{ opacity: 0, scale: 0.92, y: 16 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={softSpring}
+      >
+
+        <div className="border-b border-dark-carbon p-6 text-center">
+          <motion.div
+            className="mb-4 inline-flex items-center justify-center rounded-full border border-dark-carbon bg-midnight-void p-3"
+            animate={{ scale: [1, 1.04, 1] }}
+            transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+          >
+            <Loader2 className="h-8 w-8 animate-spin text-amber-glow" />
+          </motion.div>
+          <h2 className="text-xl font-bold leading-tight text-polar-white">Scanning in progress</h2>
+          <p className="mt-1 text-sm font-normal text-ash-gray">Please wait while we gather the information.</p>
         </div>
 
-        <div className="p-6 space-y-5">
+        <div className="space-y-5 p-6">
           {steps.map((step, index) => {
             const isActive = index === currentStep;
             const isCompleted = index < currentStep;
 
             return (
-              <div 
-                key={index} 
-                className={`flex items-center gap-4 transition-all duration-300 ${
+              <motion.div
+                key={index}
+                layout
+                className={`flex items-center gap-4 ${
                   isActive || isCompleted ? 'opacity-100' : 'opacity-40'
                 }`}
+                animate={{
+                  x: isActive ? 6 : 0,
+                  opacity: isActive || isCompleted ? 1 : 0.4,
+                }}
+                transition={{ duration: 0.38, ease: smoothEase }}
               >
-                {/* Status Icon */}
-                <div className={`flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full border ${
-                  isCompleted 
-                    ? 'bg-green-500/10 border-green-500/50 text-green-500' 
-                    : isActive 
-                      ? 'bg-blue-500/10 border-blue-500/50 text-blue-500' 
-                      : 'border-gray-700 text-gray-600'
+                <div className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border ${
+                  isCompleted
+                    ? 'border-amber-glow bg-amber-glow/15 text-amber-glow'
+                    : isActive
+                      ? 'border-amber-glow bg-amber-glow/10 text-amber-glow'
+                      : 'border-dark-carbon text-ash-gray'
                 }`}>
-                  {isCompleted ? (
-                    <CheckCircle2 className="w-5 h-5" />
-                  ) : isActive ? (
-                    <div className="w-2.5 h-2.5 bg-blue-500 rounded-full animate-pulse" />
-                  ) : (
-                    <div className="w-2 h-2 bg-gray-600 rounded-full" />
-                  )}
+                  <AnimatePresence mode="wait">
+                    {isCompleted ? (
+                      <motion.span
+                        key="done"
+                        initial={{ scale: 0.5, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0.6, opacity: 0 }}
+                        transition={softSpring}
+                        className="flex"
+                      >
+                        <CheckCircle2 className="h-5 w-5" />
+                      </motion.span>
+                    ) : isActive ? (
+                      <motion.span
+                        key="active"
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: [0.55, 1, 0.55] }}
+                        exit={{ opacity: 0 }}
+                        transition={{
+                          opacity: { duration: 1.2, repeat: Infinity, ease: "easeInOut" },
+                          scale: softSpring,
+                        }}
+                        className="h-2.5 w-2.5 rounded-full bg-amber-glow"
+                      />
+                    ) : (
+                      <motion.span
+                        key="idle"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="h-2 w-2 rounded-full bg-ash-gray"
+                      />
+                    )}
+                  </AnimatePresence>
                 </div>
 
-                <span className={`text-sm font-medium ${
-                  isActive ? 'text-white' : 'text-gray-400'
+                <span className={`text-sm font-normal ${
+                  isActive ? 'text-polar-white' : 'text-ash-gray'
                 }`}>
                   {step.label}
                 </span>
-              </div>
+              </motion.div>
             );
           })}
         </div>
 
-        <div className="p-4 bg-gray-800/30 text-center border-t border-gray-700">
-          <p className="text-xs text-gray-500">
+        <motion.div
+          className="border-t border-dark-carbon bg-midnight-void/50 p-4 text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
+        >
+          <p className="text-[13px] font-normal leading-[1.43] text-ash-gray">
             This process may take up to 30 seconds. Do not close this window.
           </p>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }
